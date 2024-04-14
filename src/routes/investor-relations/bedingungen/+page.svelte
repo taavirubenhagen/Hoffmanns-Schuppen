@@ -1,5 +1,6 @@
 <script>
-    (() => document.getElementById('dl')?.click())();
+    document.getElementById('dl')?.click();
+    close();
 </script>
 
 
