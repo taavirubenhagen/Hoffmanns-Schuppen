@@ -1,1 +1,1 @@
-<meta http-equiv="Refresh" content="0; url='/drafts/hoffmanns-schuppen/countdown" />
+<meta http-equiv="Refresh" content="0; url='/investor-relations/bedingungen" />
