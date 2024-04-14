@@ -88,6 +88,7 @@ const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) =
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $$unsubscribe_cursorPosition;
   $$unsubscribe_cursorPosition = subscribe(cursorPosition, (value) => value);
+  let menuExpanded = false;
   $$unsubscribe_cursorPosition();
   return `
 
@@ -95,33 +96,44 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center">${validate_component(IconButton, "IconButton").$$render(
+    <header class="${"fixed z-40 w-full h-16 " + escape(menuExpanded ? "bg-background" : "bg-secondary", true) + " px-8 md:px-16 flex justify-between items-center"}">${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
-      inverted: true,
-      name: "menu",
-      onClick: () => alert("Mehr Website-Inhalte folgen!")
+      inverted: !menuExpanded,
+      name: menuExpanded ? "close" : "menu",
+      onClick: () => menuExpanded = !menuExpanded
     },
     {},
     {}
   )}
-        <div class="font-display text-onPrimary">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
-    default: () => {
-      return `Hoffmann&#39;s Schuppen`;
+        ${validate_component(RawButton, "RawButton").$$render(
+    $$result,
+    {
+      onClick: () => window.location.href = "/"
+    },
+    {},
+    {
+      default: () => {
+        return `<div class="${"font-display " + escape(menuExpanded ? "text-onBackground" : "text-onPrimary", true)}">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
+          default: () => {
+            return `Hoffmann&#39;s Schuppen`;
+          }
+        })}</div>`;
+      }
     }
-  })}</div>
+  )}
         
         ${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
-      inverted: true,
+      inverted: !menuExpanded,
       name: "euro",
       onClick: () => window.location.href = "/investor-relations"
     },
     {},
     {}
   )}</header>
-    <div class="${"transition duration-long fixed z-30 " + escape("-translate-x-full", true) + " w-full h-full background p-8 pt-24 flex flex-col items-start gap-1"}">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
+    <div class="${"transition duration-long fixed z-30 " + escape(menuExpanded ? "-translate-x-0" : "-translate-x-full", true) + " w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col items-start gap-4"}">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
     return `${validate_component(RawButton, "RawButton").$$render(
       $$result,
       {
