@@ -30,10 +30,10 @@
     </div>
     <div class='mb-8 w-full flex flex-col gap-4'>
         <!--TODO: PNG -> PDF-->
-        <Button secondary download onClick={() => window.location.href = '/investor-relations/bedingungen/Bedingungen.pdf'}>
+        <Button secondary download onClick={() => window.location.href = '/aktien/Bedingungen.pdf'}>
             Informationsblatt herunterladen
         </Button>
-        <Button next onClick={() => alert('Bitte wende dich persönlich oder über IServ an unser Aktienteam')}>
+        <Button next onClick={() => alert('Bitte wende dich persönlich oder über IServ an unser Aktienteam.')}>
             Jetzt kaufen
         </Button>
     </div>

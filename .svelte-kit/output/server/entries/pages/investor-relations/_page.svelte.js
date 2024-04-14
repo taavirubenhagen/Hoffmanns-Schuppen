@@ -8,7 +8,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Section, "Section").$$render(
     $$result,
     {
-      className: "bg-white p-16 flex flex-col justify-between"
+      className: "p-8 md:p-16 flex flex-col justify-between"
     },
     {},
     {

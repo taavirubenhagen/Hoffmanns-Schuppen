@@ -86,8 +86,8 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 
-<main class="relative h-screen overflow-x-hidden cursor-none">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-16 flex justify-between items-center"><img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-12 bg-onPrimary">
+<main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
+    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-12 bg-onPrimary">
         ${validate_component(Button, "Button").$$render(
     $$result,
     {
