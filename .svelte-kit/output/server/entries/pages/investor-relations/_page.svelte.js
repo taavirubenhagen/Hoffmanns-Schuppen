@@ -15,7 +15,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `<div><div style="font-family: &quot;Roboto Serif&quot;">${validate_component(MediumHeading, "MediumHeading").$$render($$result, {}, {}, {
           default: () => {
-            return `Hoffmann&#39;s Schuppen geh\xF6rt den Sch\xFClern.
+            return `F\xFCr eine Sch\xFClerfirma, die den Sch\xFClern geh\xF6rt.
                     <br><br>`;
           }
         })}</div>
