@@ -26,16 +26,13 @@
                 Für 5€ erhälst du eine Aktie, die dir Anspruch auf einen Anteil des Firmenkapitals gibt.
                 Du kannst deine Aktien jederzeit wieder an uns zurückgeben
                 und bekommst die bis dahin mit deinem Investment erzielten Gewinne ausgezahlt.
-                <br/><br/>
-                Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf deinem Aktiendokument.
-                Dieses wird beim Kauf ausgestellt und ist personalisiert, um Fälschungen zu vermeiden;
-                du kannst hier aber ein Beispieldokument mit allen wichtigen Informationen herunterladen.
+                Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf dem Informationsblatt.
             </SmallParagraph>
         </div>
         <div class='mb-8 w-full flex flex-col gap-4'>
             <!--TODO: PNG -> PDF-->
-            <Button secondary download onClick={() => window.location.href = '/drafts/hoffmanns-schuppen/Aktie.png'}>
-                Beispielaktie
+            <Button secondary download onClick={() => window.location.href = '/investor-relations/bedingungen/Bedingungen.pdf'}>
+                Informationsblatt herunterladen
             </Button>
             <Button next onClick={() => {}}>
                 Jetzt kaufen

@@ -24,11 +24,11 @@
             <slot/>
             <div class='inline relative top-0.5'>
                 {#if openInNew}
-                    <Icon name="open-in-new"/>
+                    <Icon inverted={!secondary} name="open-in-new"/>
                 {:else if next}
-                    <Icon name="arrow-forward"/>
+                    <Icon inverted={!secondary} name="arrow-forward"/>
                 {:else if download}
-                    <Icon name="download"/>
+                    <Icon inverted={!secondary} name="download"/>
                 {/if}
             </div>
         </SmallParagraph>
