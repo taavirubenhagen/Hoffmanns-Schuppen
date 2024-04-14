@@ -17,7 +17,7 @@
         <div>
             <div style='font-family: "Roboto Serif"'>
                 <MediumHeading>
-                    Direkte Beteiligung war noch nie so einfach.
+                    Hoffmann's Schuppen gehört den Schülern.
                     <br/><br/>
                 </MediumHeading>
             </div>
@@ -34,7 +34,7 @@
             <Button secondary download onClick={() => window.location.href = '/investor-relations/bedingungen/Bedingungen.pdf'}>
                 Informationsblatt herunterladen
             </Button>
-            <Button next onClick={() => {}}>
+            <Button next onClick={() => alert('Bitte wende dich persönlich oder über IServ an unser Aktienteam')}>
                 Jetzt kaufen
             </Button>
         </div>

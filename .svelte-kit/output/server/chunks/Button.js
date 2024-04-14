@@ -26,7 +26,7 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `<div class="${"rounded-lg h-12 px-4 " + escape(
             secondary ? "bg-green-300 text-black" : "bg-green-900 text-white",
             true
-          ) + " center_row font-body"}">${slots.default ? slots.default({}) : ``}
+          ) + " flex justify-between items-center font-body"}">${slots.default ? slots.default({}) : ``}
             <div class="inline relative top-0.5">${openInNew ? `${validate_component(Icon, "Icon").$$render(
             $$result,
             {
