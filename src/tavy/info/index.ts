@@ -10,7 +10,7 @@ const twInTextSizes = {
 };
 const textSizesInTW = swap(twInTextSizes);
 
-const tavyVersion = '2024-03-A';
+const tavyVersion = '2024-04-A';
 
 export {
     tavyVersion,

@@ -21,7 +21,7 @@ module.exports = {
     theme: {
         fontFamily: {
             body: ['Roboto Slab'],
-            display: ['Roboto Serif'],
+            display: ['Permanent Marker', 'Caveat Brush'],
             sans: ['Lexend'],
             mono: ['IBM Plex Mono'],
         },
@@ -40,12 +40,6 @@ module.exports = {
             flex: {
                 center_col: "flex flex-col justify-center items-center",
                 center_row: "flex flex-row justify-center items-center",
-            },
-            fontFamily: {
-              logo: ['Permanent Marker'],
-              rounded: ['Quicksand'],
-              slab: ['Aleo'],           // TODO: F
-              handwriting: ['Permanent Marker', 'Yellowtail', 'Caveat'],
             },
             transitionDelay: {
                 0: '0s',

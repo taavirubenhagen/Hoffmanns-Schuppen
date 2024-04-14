@@ -3,9 +3,8 @@ import { p as page, n as navigating } from "../../chunks/stores.js";
 import { w as writable } from "../../chunks/index2.js";
 import { S as Section } from "../../chunks/Section.js";
 import { L as LargeHeading } from "../../chunks/LargeHeading.js";
-import { I as Icon } from "../../chunks/RawButton.js";
+import { R as RawButton, I as Icon } from "../../chunks/RawButton.js";
 import UAParser from "ua-parser-js";
-import { B as Button } from "../../chunks/Button.js";
 const cursorPosition = writable([0, 0]);
 const buttonHover = writable(false);
 const DeviceDetector = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -70,6 +69,22 @@ const Cursor = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     }
   })}`;
 });
+const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {
+  let { inverted = false } = $$props;
+  let { name } = $$props;
+  let { onClick } = $$props;
+  if ($$props.inverted === void 0 && $$bindings.inverted && inverted !== void 0)
+    $$bindings.inverted(inverted);
+  if ($$props.name === void 0 && $$bindings.name && name !== void 0)
+    $$bindings.name(name);
+  if ($$props.onClick === void 0 && $$bindings.onClick && onClick !== void 0)
+    $$bindings.onClick(onClick);
+  return `${validate_component(RawButton, "RawButton").$$render($$result, { onClick }, {}, {
+    default: () => {
+      return `${validate_component(Icon, "Icon").$$render($$result, { inverted, name }, {}, {})}`;
+    }
+  })}`;
+});
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let $page, $$unsubscribe_page;
   let $$unsubscribe_cursorPosition;
@@ -90,21 +105,15 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
     <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><div class="w-1/3 flex">${validate_component(Icon, "Icon").$$render($$result, { inverted: true, name: "menu" }, {}, {})}</div>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
-        <div class="w-1/3 flex justify-end">${validate_component(Button, "Button").$$render(
+        <div class="w-1/3 flex justify-end">${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
-      mini: true,
-      secondary: true,
+      name: "euro",
       onClick: () => {
       }
     },
     {},
-    {
-      default: () => {
-        return `Investieren
-            `;
-      }
-    }
+    {}
   )}</div></header>
     ${$navigating ? `${validate_component(Section, "Section").$$render($$result, {}, {}, {
     default: () => {

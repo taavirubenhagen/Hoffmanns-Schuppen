@@ -2,9 +2,10 @@
     import { page, navigating } from '$app/stores';
     import { cursorPosition, globalScrollY } from "$state";
     import "$style";
-    import { Section, LargeHeading, Cursor } from "$tavy";
+    import { Section, LargeHeading, Cursor, SmallHeading } from "$tavy";
     import { Button, IconButton } from "$tavy/hoffmanns";
   import Icon from '$tavy/main/icons/icon.svelte';
+  import SmallParagraph from '$tavy/main/text/paragraphs/SmallParagraph.svelte';
 
 
     let windowHeight: number;
@@ -33,11 +34,14 @@
     <Cursor/>
     <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
         <div class='w-1/3 flex'>
-            <Icon inverted name='menu'/>
+            <IconButton inverted name='menu' onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
         </div>
-        <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
+        <div class='font-display text-onPrimary'>
+            <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
+        </div>
+        <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
         <div class='w-1/3 flex justify-end'>
-            <IconButton name='euro' onClick={() => {}}/>
+            <IconButton inverted name='euro' onClick={() => window.location.href = '/investor-relations'}/>
         </div>
     </header>
     {#if $navigating}

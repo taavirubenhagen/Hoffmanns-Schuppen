@@ -19,8 +19,7 @@
       "_index2.js",
       "_Section.js",
       "_LargeHeading.js",
-      "_RawButton.js",
-      "_Button.js"
+      "_RawButton.js"
     ]
   },
   "src/routes/+error.svelte": {
@@ -204,15 +203,6 @@
       "_Section.js"
     ]
   },
-  "_Button.js": {
-    "file": "chunks/Button.js",
-    "imports": [
-      "_index3.js",
-      "_Section.js",
-      "_SmallParagraph.js",
-      "_RawButton.js"
-    ]
-  },
   "_SmallParagraph.js": {
     "file": "chunks/SmallParagraph.js",
     "imports": [
@@ -225,6 +215,15 @@
     "imports": [
       "_index3.js",
       "_Section.js"
+    ]
+  },
+  "_Button.js": {
+    "file": "chunks/Button.js",
+    "imports": [
+      "_index3.js",
+      "_Section.js",
+      "_SmallParagraph.js",
+      "_RawButton.js"
     ]
   }
 }
