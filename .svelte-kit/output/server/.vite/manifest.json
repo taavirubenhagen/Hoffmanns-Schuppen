@@ -117,6 +117,14 @@
       "_Button.js"
     ]
   },
+  "src/routes/investor-relations/bedingungen/+page.svelte": {
+    "file": "entries/pages/investor-relations/bedingungen/_page.svelte.js",
+    "src": "src/routes/investor-relations/bedingungen/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js"
+    ]
+  },
   "src/routes/mach-mit/+page.svelte": {
     "file": "entries/pages/mach-mit/_page.svelte.js",
     "src": "src/routes/mach-mit/+page.svelte",
