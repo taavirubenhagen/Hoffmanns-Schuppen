@@ -4,7 +4,6 @@ const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { name } = $$props;
   let { inverted = false } = $$props;
   let { size = 16 } = $$props;
-  let { textClass = "" } = $$props;
   const src = `/tavy/icons/${tavyVersion}/svg/${name}.svg`;
   if ($$props.name === void 0 && $$bindings.name && name !== void 0)
     $$bindings.name(name);
@@ -12,8 +11,6 @@ const Icon = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.inverted(inverted);
   if ($$props.size === void 0 && $$bindings.size && size !== void 0)
     $$bindings.size(size);
-  if ($$props.textClass === void 0 && $$bindings.textClass && textClass !== void 0)
-    $$bindings.textClass(textClass);
   return `<img${add_attribute("src", src, 0)}${add_attribute("alt", name, 0)}${add_attribute("class", inverted ? "invert" : "", 0)} style="${"height: " + escape(size / 16 * 1.25, true) + "rem;"}">`;
 });
 const RawButton = create_ssr_component(($$result, $$props, $$bindings, slots) => {

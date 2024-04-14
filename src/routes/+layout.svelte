@@ -3,7 +3,7 @@
     import { cursorPosition, globalScrollY } from "$state";
     import "$style";
     import { Section, LargeHeading, Cursor } from "$tavy";
-    import { Button } from "$tavy/hoffmanns";
+    import { Button, IconButton } from "$tavy/hoffmanns";
   import Icon from '$tavy/main/icons/icon.svelte';
 
 
@@ -37,9 +37,7 @@
         </div>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
         <div class='w-1/3 flex justify-end'>
-            <Button mini secondary onClick={() => {}}>
-                Investieren
-            </Button>
+            <IconButton name='euro' onClick={() => {}}/>
         </div>
     </header>
     {#if $navigating}
