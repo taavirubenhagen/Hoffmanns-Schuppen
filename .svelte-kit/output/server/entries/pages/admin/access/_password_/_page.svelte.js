@@ -1,9 +1,8 @@
 import { c as create_ssr_component, v as validate_component } from "../../../../../chunks/index3.js";
+import "../../../../../chunks/index4.js";
+import { S as SmallHeading } from "../../../../../chunks/SmallHeading.js";
 import { S as Section } from "../../../../../chunks/Section.js";
 import "ua-parser-js";
-const SmallHeading = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `<t class="text-3xl md:text-5xl font-bold">${slots.default ? slots.default({}) : ``}</t>`;
-});
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `${validate_component(Section, "Section").$$render($$result, {}, {}, {
     default: () => {

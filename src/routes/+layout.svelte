@@ -26,18 +26,20 @@
     class='relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground'
 >
     <Cursor/>
-    <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
-        <IconButton inverted name={menuExpanded ? 'close' : 'menu'} onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
-        <div class='font-display text-onPrimary'>
-            <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
-        </div>
+    <header class='fixed z-40 w-full h-16 {menuExpanded ? 'bg-background' : 'bg-secondary'} px-8 md:px-16 flex justify-between items-center'>
+        <IconButton inverted={!menuExpanded} name={menuExpanded ? 'close' : 'menu'} onClick={() => menuExpanded = !menuExpanded}/>
+        <RawButton onClick={() => window.location.href = '/'}>
+            <div class='font-display {menuExpanded ? 'text-onBackground' : 'text-onPrimary'}'>
+                <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
+            </div>
+        </RawButton>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
-        <IconButton inverted name='euro' onClick={() => window.location.href = '/investor-relations'}/>
+        <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
     </header>
     <div
         class=
         'transition duration-long fixed z-30 {menuExpanded ? '-translate-x-0' : '-translate-x-full'}
-        w-full h-full background p-8 pt-24 flex flex-col items-start gap-1'
+        w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col items-start gap-4'
     >
         {#each [
             ['Investieren', '/investor-relations'],

@@ -1,11 +1,10 @@
-import { c as create_ssr_component, o as onMount, d as subscribe, v as validate_component, e as escape } from "../../chunks/index3.js";
-import { p as page, n as navigating } from "../../chunks/stores.js";
+import { c as create_ssr_component, o as onMount, d as subscribe, v as validate_component, e as escape, f as each } from "../../chunks/index3.js";
 import { w as writable } from "../../chunks/index2.js";
-import { S as Section } from "../../chunks/Section.js";
+import "../../chunks/index4.js";
 import { S as SmallParagraph } from "../../chunks/SmallParagraph.js";
-import { L as LargeHeading } from "../../chunks/LargeHeading.js";
-import UAParser from "ua-parser-js";
+import { S as SmallHeading } from "../../chunks/SmallHeading.js";
 import { R as RawButton, I as Icon } from "../../chunks/RawButton.js";
+import UAParser from "ua-parser-js";
 const cursorPosition = writable([0, 0]);
 const buttonHover = writable(false);
 const DeviceDetector = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -87,17 +86,9 @@ const IconButton = create_ssr_component(($$result, $$props, $$bindings, slots) =
   })}`;
 });
 const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  let $page, $$unsubscribe_page;
   let $$unsubscribe_cursorPosition;
-  let $navigating, $$unsubscribe_navigating;
-  $$unsubscribe_page = subscribe(page, (value) => $page = value);
   $$unsubscribe_cursorPosition = subscribe(cursorPosition, (value) => value);
-  $$unsubscribe_navigating = subscribe(navigating, (value) => $navigating = value);
-  const routes = $page.url.href.split("/").slice(3);
-  !(routes.includes("hoffmanns-schuppen") || routes.includes("website"));
-  $$unsubscribe_page();
   $$unsubscribe_cursorPosition();
-  $$unsubscribe_navigating();
   return `
 
 
@@ -130,17 +121,26 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {},
     {}
   )}</header>
-    ${$navigating ? `${validate_component(Section, "Section").$$render($$result, {}, {}, {
-    default: () => {
-      return `${validate_component(LargeHeading, "LargeHeading").$$render($$result, {}, {}, {
+    <div class="${"transition duration-long fixed z-30 " + escape("-translate-x-full", true) + " w-full h-full background p-8 pt-24 flex flex-col items-start gap-1"}">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
+    return `${validate_component(RawButton, "RawButton").$$render(
+      $$result,
+      {
+        onClick: () => window.location.href = e[1]
+      },
+      {},
+      {
         default: () => {
-          return `Loading \u21BA
+          return `${validate_component(SmallHeading, "SmallHeading").$$render($$result, {}, {}, {
+            default: () => {
+              return `${escape(e[0])}`;
+            }
+          })}
             `;
         }
-      })}`;
-    }
-  })}` : `
-        ${slots.default ? slots.default({}) : ``}`}</main>`;
+      }
+    )}`;
+  })}</div>
+    ${slots.default ? slots.default({}) : ``}</main>`;
 });
 export {
   Layout as default

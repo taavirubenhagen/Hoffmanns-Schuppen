@@ -1,6 +1,7 @@
-import { c as create_ssr_component, v as validate_component, h as each, e as escape } from "../../../chunks/index3.js";
-import { S as Section } from "../../../chunks/Section.js";
+import { c as create_ssr_component, v as validate_component, f as each, e as escape } from "../../../chunks/index3.js";
+import "../../../chunks/index4.js";
 import { M as MediumHeading } from "../../../chunks/MediumHeading.js";
+import { S as Section } from "../../../chunks/Section.js";
 import "ua-parser-js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<div style="font-family: &quot;Roboto Serif&quot;">${validate_component(Section, "Section").$$render($$result, { className: "bg-green-950 text-white" }, {}, {

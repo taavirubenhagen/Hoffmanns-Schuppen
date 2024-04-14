@@ -1,5 +1,5 @@
-import { c as create_ssr_component, f as add_attribute, v as validate_component } from "./index3.js";
-import "./Section.js";
+import { c as create_ssr_component, g as add_attribute, v as validate_component } from "./index3.js";
+import "./index4.js";
 import "ua-parser-js";
 const Paragraph = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { textClass = "" } = $$props;

@@ -1,6 +1,7 @@
 import { c as create_ssr_component, v as validate_component } from "../../../chunks/index3.js";
-import { S as Section } from "../../../chunks/Section.js";
+import "../../../chunks/index4.js";
 import { M as MediumHeading } from "../../../chunks/MediumHeading.js";
+import { S as Section } from "../../../chunks/Section.js";
 import "ua-parser-js";
 import { B as Button } from "../../../chunks/Button.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {

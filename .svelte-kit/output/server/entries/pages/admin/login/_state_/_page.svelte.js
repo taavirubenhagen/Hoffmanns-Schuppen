@@ -1,8 +1,26 @@
-import { c as create_ssr_component, v as validate_component, e as escape, f as add_attribute, d as subscribe } from "../../../../../chunks/index3.js";
-import { p as page } from "../../../../../chunks/stores.js";
+import { h as getContext, c as create_ssr_component, v as validate_component, e as escape, g as add_attribute, d as subscribe } from "../../../../../chunks/index3.js";
+import "../../../../../chunks/index4.js";
 import { S as Section } from "../../../../../chunks/Section.js";
 import "ua-parser-js";
 import { R as RawButton, I as Icon } from "../../../../../chunks/RawButton.js";
+const getStores = () => {
+  const stores = getContext("__svelte__");
+  return {
+    page: {
+      subscribe: stores.page.subscribe
+    },
+    navigating: {
+      subscribe: stores.navigating.subscribe
+    },
+    updated: stores.updated
+  };
+};
+const page = {
+  subscribe(fn) {
+    const store = getStores().page;
+    return store.subscribe(fn);
+  }
+};
 const MediumParagraph = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `<t class="text-xl">${slots.default ? slots.default({}) : ``}</t>`;
 });

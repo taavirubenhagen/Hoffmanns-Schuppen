@@ -1,5 +1,5 @@
 import { c as create_ssr_component, v as validate_component, e as escape } from "./index3.js";
-import "./Section.js";
+import "./index4.js";
 import { S as SmallParagraph } from "./SmallParagraph.js";
 import { R as RawButton, I as Icon } from "./RawButton.js";
 import "ua-parser-js";
