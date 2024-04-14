@@ -33,16 +33,12 @@
 >
     <Cursor/>
     <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
-        <div class='w-1/3 flex'>
-            <IconButton inverted name='menu' onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
-        </div>
+        <IconButton inverted name='menu' onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
         <div class='font-display text-onPrimary'>
             <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
         </div>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
-        <div class='w-1/3 flex justify-end'>
-            <IconButton inverted name='euro' onClick={() => window.location.href = '/investor-relations'}/>
-        </div>
+        <IconButton inverted name='euro' onClick={() => window.location.href = '/investor-relations'}/>
     </header>
     {#if $navigating}
         <Section>
