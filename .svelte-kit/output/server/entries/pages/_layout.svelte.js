@@ -88,9 +88,9 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center">${validate_component(Icon, "Icon").$$render($$result, { inverted: true, name: "menu" }, {}, {})}
+    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><div class="w-1/3 flex">${validate_component(Icon, "Icon").$$render($$result, { inverted: true, name: "menu" }, {}, {})}</div>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
-        ${validate_component(Button, "Button").$$render(
+        <div class="w-1/3 flex justify-end">${validate_component(Button, "Button").$$render(
     $$result,
     {
       mini: true,
@@ -102,10 +102,10 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {
       default: () => {
         return `Investieren
-        `;
+            `;
       }
     }
-  )}</header>
+  )}</div></header>
     ${$navigating ? `${validate_component(Section, "Section").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(LargeHeading, "LargeHeading").$$render($$result, {}, {}, {
