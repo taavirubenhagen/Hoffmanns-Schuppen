@@ -20,21 +20,21 @@ module.exports = {
     plugins: [],
     theme: {
         fontFamily: {
-            body: ['Lexend'],
-            display: ['Caveat', 'Arial'],
+            body: ['Roboto Slab'],
+            display: ['Roboto Serif'],
             sans: ['Lexend'],
-            mono: ['IBM Plex Mono', 'Consolas'],
+            mono: ['IBM Plex Mono'],
         },
         extend: {
             colors: {
-                background: "#FFF",
-                //onBackground: "#000",
-                primary: "#000",
-                accent: '#00F',
-                //onPrimary: "#FFF",
+                background: "#EEFFEE",
+                onBackground: "#000",
+                primary: "#005500",
+                accent: '#00EE00',
+                onPrimary: "#FFF",
                 //secondary: colors.neutral["500"],
                 //onSecondary: "#000",
-                error: colors.red['500'],
+                error: '#550000',
                 onError: "#FFF",
             },
             flex: {

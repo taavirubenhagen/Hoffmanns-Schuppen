@@ -122,7 +122,7 @@ const options = {
   root: Root,
   service_worker: false,
   templates: {
-    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<!--<link rel="icon" href="' + assets2 + `/logos/logo_favicon_light.svg" />-->\r
+    app: ({ head, body, assets: assets2, nonce, env }) => '<!DOCTYPE html>\r\n<html lang="en">\r\n	<head>\r\n		<meta charset="utf-8" />\r\n		<link rel="icon" href="' + assets2 + `/logos/logo_solid.jpg" />\r
 		<title>Hoffmann's Schuppen</title>\r
 		<meta name="viewport" content="width=device-width" />\r
 		<meta name="theme-color" content="#000">\r
@@ -204,7 +204,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "afbak3"
+  version_hash: "vyxze9"
 };
 function get_hooks() {
   return {};

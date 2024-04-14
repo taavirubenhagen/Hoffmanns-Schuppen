@@ -30,6 +30,7 @@
     class='relative h-screen overflow-x-hidden cursor-none'
 >
     <Cursor/>
+    <header class='fixed w-full h-16 bg-opacity-50 bg-primary'></header>
     {#if $navigating}
         <Section>
             <LargeHeading>

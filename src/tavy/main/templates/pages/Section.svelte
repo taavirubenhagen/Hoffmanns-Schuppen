@@ -10,6 +10,6 @@
 <svelte:window bind:innerHeight={windowHeight}/>
 
 
-<div class={className} style='min-height: {windowHeight}px;'>
+<div class='{className} mt-16' style='min-height: calc({windowHeight}px - 4rem);'>
     <slot/>
 </div>
