@@ -4,7 +4,6 @@
     import "$style";
     import { Section, LargeHeading } from "$tavy";
     import { Cursor } from '$tavy';
-    import { LegalFooter } from "$tavy/industrial";
 
 
     let windowHeight: number;
@@ -40,8 +39,5 @@
     {:else}
         <!-- TODO: Add standard scrollbar effects -->
         <slot/>
-    {/if}
-    {#if legalFooterVisible}
-        <LegalFooter contactLink='/legal/contact' ppLink='/legal/privacy-policy'/>
     {/if}
 </main>
