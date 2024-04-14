@@ -7,7 +7,6 @@
     export let inverted = false;
     // Defaults to fit 'text-base'
     export let size = 16;
-    export let textClass = ""   // TODO: R
 
     const src = `/tavy/icons/${tavyVersion}/svg/${name}.svg`;
     //`https://raw.githubusercontent.com/taavirubenhagen/taavirubenhagen/main/tavy/main/icons/${tavyVersion}/${name}.svg`;
