@@ -2,9 +2,10 @@ import { c as create_ssr_component, o as onMount, d as subscribe, v as validate_
 import { p as page, n as navigating } from "../../chunks/stores.js";
 import { w as writable } from "../../chunks/index2.js";
 import { S as Section } from "../../chunks/Section.js";
+import { S as SmallParagraph } from "../../chunks/SmallParagraph.js";
 import { L as LargeHeading } from "../../chunks/LargeHeading.js";
-import { R as RawButton, I as Icon } from "../../chunks/RawButton.js";
 import UAParser from "ua-parser-js";
+import { R as RawButton, I as Icon } from "../../chunks/RawButton.js";
 const cursorPosition = writable([0, 0]);
 const buttonHover = writable(false);
 const DeviceDetector = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -103,14 +104,28 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><div class="w-1/3 flex">${validate_component(Icon, "Icon").$$render($$result, { inverted: true, name: "menu" }, {}, {})}</div>
-        <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
+    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><div class="w-1/3 flex">${validate_component(IconButton, "IconButton").$$render(
+    $$result,
+    {
+      inverted: true,
+      name: "menu",
+      onClick: () => alert("Mehr Website-Inhalte folgen!")
+    },
+    {},
+    {}
+  )}</div>
+        <div class="font-display text-onPrimary">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
+    default: () => {
+      return `Hoffmann&#39;s Schuppen`;
+    }
+  })}</div>
+        
         <div class="w-1/3 flex justify-end">${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
+      inverted: true,
       name: "euro",
-      onClick: () => {
-      }
+      onClick: () => window.location.href = "/investor-relations"
     },
     {},
     {}

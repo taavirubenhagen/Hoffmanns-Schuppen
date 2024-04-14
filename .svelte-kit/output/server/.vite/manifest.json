@@ -18,6 +18,7 @@
       "_stores.js",
       "_index2.js",
       "_Section.js",
+      "_SmallParagraph.js",
       "_LargeHeading.js",
       "_RawButton.js"
     ]
@@ -186,7 +187,14 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Section.210f21ca.css"
+      "_app/immutable/assets/Section.d8fe02cd.css"
+    ]
+  },
+  "_SmallParagraph.js": {
+    "file": "chunks/SmallParagraph.js",
+    "imports": [
+      "_index3.js",
+      "_Section.js"
     ]
   },
   "_LargeHeading.js": {
@@ -198,13 +206,6 @@
   },
   "_RawButton.js": {
     "file": "chunks/RawButton.js",
-    "imports": [
-      "_index3.js",
-      "_Section.js"
-    ]
-  },
-  "_SmallParagraph.js": {
-    "file": "chunks/SmallParagraph.js",
     "imports": [
       "_index3.js",
       "_Section.js"

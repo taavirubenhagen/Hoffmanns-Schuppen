@@ -10,7 +10,7 @@ const twInTextSizes = {
   "text-3xl": 30
 };
 swap(twInTextSizes);
-const tavyVersion = "2024-03-A";
+const tavyVersion = "2024-04-A";
 const Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { className = "" } = $$props;
   let windowHeight;
