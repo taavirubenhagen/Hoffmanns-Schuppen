@@ -2,19 +2,13 @@
     import { page, navigating } from '$app/stores';
     import { cursorPosition, globalScrollY } from "$state";
     import "$style";
-    import { Section, LargeHeading, Cursor, SmallHeading } from "$tavy";
+    import { Section, LargeHeading, Cursor, SmallParagraph, RawButton, SmallHeading } from "$tavy";
     import { Button, IconButton } from "$tavy/hoffmanns";
-  import Icon from '$tavy/main/icons/icon.svelte';
-  import SmallParagraph from '$tavy/main/text/paragraphs/SmallParagraph.svelte';
 
 
     let windowHeight: number;
 
-    const routes = $page.url.href.split('/').slice(3);
-    const legalFooterVisible = !(
-        routes.includes('hoffmanns-schuppen') ||
-        routes.includes('website')
-    );
+    let menuExpanded = false;
 </script>
 
 
@@ -33,21 +27,26 @@
 >
     <Cursor/>
     <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
-        <IconButton inverted name='menu' onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
+        <IconButton inverted name={menuExpanded ? 'close' : 'menu'} onClick={() => alert('Mehr Website-Inhalte folgen!')}/>
         <div class='font-display text-onPrimary'>
             <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
         </div>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
         <IconButton inverted name='euro' onClick={() => window.location.href = '/investor-relations'}/>
     </header>
-    {#if $navigating}
-        <Section>
-            <LargeHeading>
-                Loading ↺
-            </LargeHeading>
-        </Section>
-    {:else}
-        <!-- TODO: Add standard scrollbar effects -->
-        <slot/>
-    {/if}
+    <div
+        class=
+        'transition duration-long fixed z-30 {menuExpanded ? '-translate-x-0' : '-translate-x-full'}
+        w-full h-full background p-8 pt-24 flex flex-col items-start gap-1'
+    >
+        {#each [
+            ['Investieren', '/investor-relations'],
+            ['Impressum', '/impressum'],
+        ] as e}
+            <RawButton onClick={() => window.location.href = e[1]}>
+                <SmallHeading>{e[0]}</SmallHeading>
+            </RawButton>
+        {/each}
+    </div>
+    <slot/>
 </main>
