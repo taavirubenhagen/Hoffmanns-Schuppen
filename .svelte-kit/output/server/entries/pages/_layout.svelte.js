@@ -104,7 +104,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><div class="w-1/3 flex">${validate_component(IconButton, "IconButton").$$render(
+    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center">${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
       inverted: true,
@@ -113,14 +113,14 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )}</div>
+  )}
         <div class="font-display text-onPrimary">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
     default: () => {
       return `Hoffmann&#39;s Schuppen`;
     }
   })}</div>
         
-        <div class="w-1/3 flex justify-end">${validate_component(IconButton, "IconButton").$$render(
+        ${validate_component(IconButton, "IconButton").$$render(
     $$result,
     {
       inverted: true,
@@ -129,7 +129,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     },
     {},
     {}
-  )}</div></header>
+  )}</header>
     ${$navigating ? `${validate_component(Section, "Section").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(LargeHeading, "LargeHeading").$$render($$result, {}, {}, {
