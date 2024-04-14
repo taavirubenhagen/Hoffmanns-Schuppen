@@ -32,11 +32,15 @@
 >
     <Cursor/>
     <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
-        <Icon inverted name='menu'/>
+        <div class='w-1/3 flex'>
+            <Icon inverted name='menu'/>
+        </div>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
-        <Button mini secondary onClick={() => {}}>
-            Investieren
-        </Button>
+        <div class='w-1/3 flex justify-end'>
+            <Button mini secondary onClick={() => {}}>
+                Investieren
+            </Button>
+        </div>
     </header>
     {#if $navigating}
         <Section>
