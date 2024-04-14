@@ -86,6 +86,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
+    <header class="fixed w-full h-16 bg-opacity-50 bg-primary"></header>
     ${$navigating ? `${validate_component(Section, "Section").$$render($$result, {}, {}, {
     default: () => {
       return `${validate_component(LargeHeading, "LargeHeading").$$render($$result, {}, {}, {

@@ -1,4 +1,4 @@
-import { c as create_ssr_component, f as add_attribute, e as escape } from "./index3.js";
+import { c as create_ssr_component, e as escape } from "./index3.js";
 const global = "";
 const swap = (obj) => Object.fromEntries(
   Object.entries(obj).map((a) => a.reverse())
@@ -19,7 +19,7 @@ const Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `
 
 
-<div${add_attribute("class", className, 0)} style="${"min-height: " + escape(windowHeight, true) + "px;"}">${slots.default ? slots.default({}) : ``}</div>`;
+<div class="${escape(className, true) + " mt-16"}" style="${"min-height: calc(" + escape(windowHeight, true) + "px - 4rem);"}">${slots.default ? slots.default({}) : ``}</div>`;
 });
 export {
   Section as S,

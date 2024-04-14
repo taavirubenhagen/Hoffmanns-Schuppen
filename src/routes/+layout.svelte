@@ -2,8 +2,8 @@
     import { page, navigating } from '$app/stores';
     import { cursorPosition, globalScrollY } from "$state";
     import "$style";
-    import { Section, LargeHeading } from "$tavy";
-    import { Cursor } from '$tavy';
+    import { Section, LargeHeading, Cursor } from "$tavy";
+    import { Button } from "$tavy/hoffmanns";
 
 
     let windowHeight: number;
@@ -30,7 +30,12 @@
     class='relative h-screen overflow-x-hidden cursor-none'
 >
     <Cursor/>
-    <header class='fixed w-full h-16 bg-opacity-50 bg-primary'></header>
+    <header class='fixed w-full h-16 bg-secondary px-16 flex justify-between items-center'>
+        <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-12 bg-onPrimary">
+        <Button secondary onClick={() => {}}>
+            Investieren
+        </Button>
+    </header>
     {#if $navigating}
         <Section>
             <LargeHeading>
