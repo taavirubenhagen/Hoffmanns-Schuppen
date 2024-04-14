@@ -11,7 +11,7 @@
 
 
 <RawButton onClick={onClick}>
-    <div class="inline gap-2 {invisible ? '' : 'underline underline-offset-4'}">
+    <div class="inline-flex gap-2 {invisible ? '' : 'underline underline-offset-4'}">
         <SmallParagraph>
             <slot/>
         </SmallParagraph>

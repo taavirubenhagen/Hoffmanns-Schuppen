@@ -1,7 +1,7 @@
 <script lang="ts">
     import '$style';
     import {
-        LargeHeading, MediumHeading,
+        MediumHeading,
         Section,
     } from "$tavy";
   import SmallParagraph from '$tavy/main/text/paragraphs/SmallParagraph.svelte';

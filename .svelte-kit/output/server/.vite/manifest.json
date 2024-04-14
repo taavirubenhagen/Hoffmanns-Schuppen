@@ -110,6 +110,17 @@
       "_Button.js"
     ]
   },
+  "src/routes/impressum/+page.svelte": {
+    "file": "entries/pages/impressum/_page.svelte.js",
+    "src": "src/routes/impressum/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_index3.js",
+      "_index4.js",
+      "_SmallParagraph.js",
+      "_Section.js"
+    ]
+  },
   "src/routes/investor-relations/+page.svelte": {
     "file": "entries/pages/investor-relations/_page.svelte.js",
     "src": "src/routes/investor-relations/+page.svelte",

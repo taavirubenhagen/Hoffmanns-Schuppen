@@ -2,7 +2,7 @@
     import { page, navigating } from '$app/stores';
     import { cursorPosition, globalScrollY } from "$state";
     import "$style";
-    import { Section, LargeHeading, Cursor, SmallParagraph, RawButton, SmallHeading } from "$tavy";
+    import { Section, LargeHeading, Cursor, SmallParagraph, RawButton, SmallHeading, InlineButton } from "$tavy";
     import { Button, IconButton } from "$tavy/hoffmanns";
 
 
@@ -39,16 +39,26 @@
     <div
         class=
         'transition duration-long fixed z-30 {menuExpanded ? '-translate-x-0' : '-translate-x-full'}
-        w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col items-start gap-4'
+        w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col justify-between items-start'
     >
-        {#each [
-            ['Investieren', '/investor-relations'],
-            ['Impressum', '/impressum'],
-        ] as e}
-            <RawButton onClick={() => window.location.href = e[1]}>
-                <SmallHeading>{e[0]}</SmallHeading>
-            </RawButton>
-        {/each}
+        <div class='flex flex-col items-start gap-4'>
+            {#each [
+                ['Investieren', '/investor-relations'],
+                ['Impressum', '/impressum'],
+            ] as e}
+                <RawButton onClick={() => window.location.href = e[1]}>
+                    <SmallHeading>{e[0]}</SmallHeading>
+                </RawButton>
+            {/each}
+        </div>
+        <div class='mt-32 font-display'>
+            <SmallParagraph>
+                Technischer Verantwortlicher:
+                <InlineButton openInNew onClick={() => window.location.href = 'https://instagram.com/taavirubenhagen'}>
+                    Taavi Rübenhagen
+                </InlineButton>
+            </SmallParagraph>
+        </div>
     </div>
     <slot/>
 </main>
