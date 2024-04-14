@@ -1,1 +1,0 @@
-On hover: Scale by 101%
