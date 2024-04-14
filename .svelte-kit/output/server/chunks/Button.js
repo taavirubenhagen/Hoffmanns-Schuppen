@@ -27,7 +27,23 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       ) + " center_row font-body"}">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
           return `${slots.default ? slots.default({}) : ``}
-            <div class="inline relative top-0.5">${openInNew ? `${validate_component(Icon, "Icon").$$render($$result, { name: "open-in-new" }, {}, {})}` : `${next ? `${validate_component(Icon, "Icon").$$render($$result, { name: "arrow-forward" }, {}, {})}` : `${download ? `${validate_component(Icon, "Icon").$$render($$result, { name: "download" }, {}, {})}` : ``}`}`}</div>`;
+            <div class="inline relative top-0.5">${openInNew ? `${validate_component(Icon, "Icon").$$render(
+            $$result,
+            {
+              inverted: !secondary,
+              name: "open-in-new"
+            },
+            {},
+            {}
+          )}` : `${next ? `${validate_component(Icon, "Icon").$$render(
+            $$result,
+            {
+              inverted: !secondary,
+              name: "arrow-forward"
+            },
+            {},
+            {}
+          )}` : `${download ? `${validate_component(Icon, "Icon").$$render($$result, { inverted: !secondary, name: "download" }, {}, {})}` : ``}`}`}</div>`;
         }
       })}</div>`;
     }

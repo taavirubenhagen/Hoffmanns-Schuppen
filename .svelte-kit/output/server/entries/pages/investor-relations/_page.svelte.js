@@ -25,10 +25,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
                 F\xFCr 5\u20AC erh\xE4lst du eine Aktie, die dir Anspruch auf einen Anteil des Firmenkapitals gibt.
                 Du kannst deine Aktien jederzeit wieder an uns zur\xFCckgeben
                 und bekommst die bis dahin mit deinem Investment erzielten Gewinne ausgezahlt.
-                <br><br>
-                Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf deinem Aktiendokument.
-                Dieses wird beim Kauf ausgestellt und ist personalisiert, um F\xE4lschungen zu vermeiden;
-                du kannst hier aber ein Beispieldokument mit allen wichtigen Informationen herunterladen.
+                Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf dem Informationsblatt.
             `;
           }
         })}</div>
@@ -38,12 +35,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {
             secondary: true,
             download: true,
-            onClick: () => window.location.href = "/drafts/hoffmanns-schuppen/Aktie.png"
+            onClick: () => window.location.href = "/investor-relations/bedingungen/Bedingungen.pdf"
           },
           {},
           {
             default: () => {
-              return `Beispielaktie
+              return `Informationsblatt herunterladen
             `;
             }
           }

@@ -15,12 +15,12 @@
 
 
 <RawButton onClick={onClick}>
-    <div class=
-        'rounded-lg h-12 px-4
-        {secondary ? 'bg-green-300 text-black' : 'bg-green-900 text-white'}
-        center_row font-body'
-    >
-        <SmallParagraph>
+    <SmallParagraph>
+        <div class=
+            'rounded-lg h-12 px-4
+            {secondary ? 'bg-green-300 text-black' : 'bg-green-900 text-white'}
+            center_row font-body'
+        >
             <slot/>
             <div class='inline relative top-0.5'>
                 {#if openInNew}
@@ -31,6 +31,6 @@
                     <Icon inverted={!secondary} name="download"/>
                 {/if}
             </div>
-        </SmallParagraph>
-    </div>
+        </div>
+    </SmallParagraph>
 </RawButton>
