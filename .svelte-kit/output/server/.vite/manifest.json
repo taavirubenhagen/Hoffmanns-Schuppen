@@ -18,7 +18,8 @@
       "_stores.js",
       "_index2.js",
       "_Section.js",
-      "_LargeHeading.js"
+      "_LargeHeading.js",
+      "_Button.js"
     ]
   },
   "src/routes/+error.svelte": {
@@ -185,32 +186,11 @@
       "_index3.js"
     ],
     "css": [
-      "_app/immutable/assets/Section.b2fe525d.css"
+      "_app/immutable/assets/Section.dcd80d0f.css"
     ]
   },
   "_LargeHeading.js": {
     "file": "chunks/LargeHeading.js",
-    "imports": [
-      "_index3.js",
-      "_Section.js"
-    ]
-  },
-  "_RawButton.js": {
-    "file": "chunks/RawButton.js",
-    "imports": [
-      "_index3.js",
-      "_Section.js"
-    ]
-  },
-  "_SmallParagraph.js": {
-    "file": "chunks/SmallParagraph.js",
-    "imports": [
-      "_index3.js",
-      "_Section.js"
-    ]
-  },
-  "_MediumHeading.js": {
-    "file": "chunks/MediumHeading.js",
     "imports": [
       "_index3.js",
       "_Section.js"
@@ -223,6 +203,27 @@
       "_Section.js",
       "_SmallParagraph.js",
       "_RawButton.js"
+    ]
+  },
+  "_SmallParagraph.js": {
+    "file": "chunks/SmallParagraph.js",
+    "imports": [
+      "_index3.js",
+      "_Section.js"
+    ]
+  },
+  "_RawButton.js": {
+    "file": "chunks/RawButton.js",
+    "imports": [
+      "_index3.js",
+      "_Section.js"
+    ]
+  },
+  "_MediumHeading.js": {
+    "file": "chunks/MediumHeading.js",
+    "imports": [
+      "_index3.js",
+      "_Section.js"
     ]
   }
 }

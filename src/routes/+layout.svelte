@@ -27,10 +27,10 @@
         scrollY = event?.currentTarget?.scrollTop;
         globalScrollY.set(event?.currentTarget?.scrollTop);
     }}
-    class='relative h-screen overflow-x-hidden cursor-none'
+    class='relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground'
 >
     <Cursor/>
-    <header class='fixed w-full h-16 bg-secondary px-16 flex justify-between items-center'>
+    <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-12 bg-onPrimary">
         <Button secondary onClick={() => {}}>
             Investieren

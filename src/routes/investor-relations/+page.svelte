@@ -12,7 +12,7 @@
 </script>
 
 
-<Section className='bg-white p-16 flex flex-col justify-between'>
+<Section className='p-8 md:p-16 flex flex-col justify-between'>
     <div>
         <div class='font-display'>
             <MediumHeading>
