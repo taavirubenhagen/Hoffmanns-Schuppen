@@ -19,7 +19,7 @@
         <div class=
             'rounded-lg h-12 px-4
             {secondary ? 'bg-green-300 text-black' : 'bg-green-900 text-white'}
-            center_row font-body'
+            flex justify-between items-center font-body'
         >
             <slot/>
             <div class='inline relative top-0.5'>

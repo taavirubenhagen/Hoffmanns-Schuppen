@@ -21,12 +21,12 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     $$bindings.onClick(onClick);
   return `${validate_component(RawButton, "RawButton").$$render($$result, { onClick }, {}, {
     default: () => {
-      return `<div class="${"rounded-lg h-12 px-4 " + escape(
-        secondary ? "bg-green-300 text-black" : "bg-green-900 text-white",
-        true
-      ) + " center_row font-body"}">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
+      return `${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
-          return `${slots.default ? slots.default({}) : ``}
+          return `<div class="${"rounded-lg h-12 px-4 " + escape(
+            secondary ? "bg-green-300 text-black" : "bg-green-900 text-white",
+            true
+          ) + " center_row font-body"}">${slots.default ? slots.default({}) : ``}
             <div class="inline relative top-0.5">${openInNew ? `${validate_component(Icon, "Icon").$$render(
             $$result,
             {
@@ -43,9 +43,9 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             },
             {},
             {}
-          )}` : `${download ? `${validate_component(Icon, "Icon").$$render($$result, { inverted: !secondary, name: "download" }, {}, {})}` : ``}`}`}</div>`;
+          )}` : `${download ? `${validate_component(Icon, "Icon").$$render($$result, { inverted: !secondary, name: "download" }, {}, {})}` : ``}`}`}</div></div>`;
         }
-      })}</div>`;
+      })}`;
     }
   })}`;
 });
