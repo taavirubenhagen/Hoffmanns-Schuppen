@@ -1,0 +1,86 @@
+export { matchers } from './matchers.js';
+
+export const nodes = [
+	() => import('./nodes/0'),
+	() => import('./nodes/1'),
+	() => import('./nodes/2'),
+	() => import('./nodes/3'),
+	() => import('./nodes/4'),
+	() => import('./nodes/5'),
+	() => import('./nodes/6'),
+	() => import('./nodes/7'),
+	() => import('./nodes/8'),
+	() => import('./nodes/9'),
+	() => import('./nodes/10'),
+	() => import('./nodes/11'),
+	() => import('./nodes/12'),
+	() => import('./nodes/13'),
+	() => import('./nodes/14'),
+	() => import('./nodes/15'),
+	() => import('./nodes/16'),
+	() => import('./nodes/17'),
+	() => import('./nodes/18'),
+	() => import('./nodes/19'),
+	() => import('./nodes/20'),
+	() => import('./nodes/21'),
+	() => import('./nodes/22'),
+	() => import('./nodes/23'),
+	() => import('./nodes/24'),
+	() => import('./nodes/25'),
+	() => import('./nodes/26'),
+	() => import('./nodes/27'),
+	() => import('./nodes/28'),
+	() => import('./nodes/29'),
+	() => import('./nodes/30'),
+	() => import('./nodes/31'),
+	() => import('./nodes/32'),
+	() => import('./nodes/33'),
+	() => import('./nodes/34'),
+	() => import('./nodes/35'),
+	() => import('./nodes/36')
+];
+
+export const server_loads = [];
+
+export const dictionary = {
+		"/": [3],
+		"/admin": [~4],
+		"/admin/access": [~5],
+		"/admin/access/[password]": [~6],
+		"/admin/login/[state]": [7],
+		"/coming-soon": [8],
+		"/counter/privacy-policy": [9],
+		"/drafts/hoffmanns-schuppen": [10],
+		"/drafts/hoffmanns-schuppen/admin": [~11],
+		"/drafts/hoffmanns-schuppen/admin/access": [~12],
+		"/drafts/hoffmanns-schuppen/admin/access/[password]": [~13],
+		"/drafts/hoffmanns-schuppen/admin/login/[state]": [14],
+		"/drafts/hoffmanns-schuppen/countdown": [15],
+		"/drafts/hoffmanns-schuppen/home": [16],
+		"/drafts/hoffmanns-schuppen/investor-relations": [17],
+		"/drafts/hoffmanns-schuppen/mach-mit": [18],
+		"/drafts/hoffmanns-schuppen/produkte": [19],
+		"/drafts/terminal": [~20],
+		"/drafts/terminal/[route]": [21],
+		"/drafts/website": [22,[2]],
+		"/drafts/website/tavy/icons": [23,[2]],
+		"/hs": [24],
+		"/legal/contact": [25],
+		"/legal/privacy-policy": [26],
+		"/politics/jugendparlament": [27],
+		"/politics/jugendparlament/sticker": [28],
+		"/presenter/download": [29],
+		"/presenter/privacy-policy": [30],
+		"/presenter/sticker": [31],
+		"/presenter/support-url": [32],
+		"/presenter/waitlist": [33],
+		"/projects": [34],
+		"/shop/dropshipping": [35],
+		"/shop/dropshipping/coming-soon": [36]
+	};
+
+export const hooks = {
+	handleError: (({ error }) => { console.error(error) }),
+};
+
+export { default as root } from '../root.svelte';

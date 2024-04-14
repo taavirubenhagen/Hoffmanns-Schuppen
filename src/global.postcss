@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* ROOT STYLES */
+
+:root {
+    @apply
+        m-0 max-w-full md:max-w-none overflow-x-hidden p-0
+        bg-background
+        text-primary selection:primary font-body;
+}
+::-webkit-scrollbar {
+    @apply w-0 h-0 background;
+}
+::-webkit-scrollbar-thumb {
+    @apply w-0 h-0 primary;
+}
+
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+button {
+    @apply cursor-none;
+}
+
+@layer utilities {
+    .text-outline {
+        /* TODO: Add cool selection effect */
+        -webkit-text-stroke: 1px #000;
+        -webkit-text-fill-color: transparent;
+    }
+    .text-outline::selection {
+        @apply bg-opacity-20 bg-primary;
+        -webkit-text-stroke: 1px #000;
+        -webkit-text-fill-color: transparent;
+    }
+    .text-outline-on-primary {
+        @apply bg-opacity-20 bg-background text-outline;
+        -webkit-text-stroke: 1px #FFF;
+    }
+
+
+
+
+    .background {
+    @apply bg-background text-primary;
+    }
+    .background::selection {
+    @apply bg-primary text-background;
+    }
+
+    .primary {
+    @apply bg-primary text-background;
+    }
+    .primary::selection {
+    @apply bg-background text-primary;
+    }
+}
+
+
+
+
+.center_col {
+  @apply flex flex-col justify-center items-center;
+}
+.center_row {
+  @apply flex flex-row justify-center items-center;
+}

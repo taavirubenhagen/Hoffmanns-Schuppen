@@ -1,0 +1,21 @@
+[context.production.environment]
+    NETLIFY_EXPERIMENTAL_BUILD_RUST_SOURCE = "true"
+
+
+
+
+[context.dev.environment]
+    NETLIFY_EXPERIMENTAL_BUILD_RUST_SOURCE = "true"
+
+
+
+
+[functions]
+    directory = "functions/"
+
+
+
+
+[build]
+	command = "npm run build"
+	publish = "build"
