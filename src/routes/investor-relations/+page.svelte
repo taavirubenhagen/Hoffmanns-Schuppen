@@ -29,7 +29,7 @@
                 Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf dem Informationsblatt.
             </SmallParagraph>
         </div>
-        <div class='mb-8 w-full flex flex-col gap-4'>
+        <div class='mb-0 w-full flex flex-col gap-4'>
             <!--TODO: PNG -> PDF-->
             <Button secondary download onClick={() => window.location.href = '/investor-relations/bedingungen/Bedingungen.pdf'}>
                 Informationsblatt herunterladen

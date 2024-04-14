@@ -15,7 +15,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       default: () => {
         return `<div><div style="font-family: &quot;Roboto Serif&quot;">${validate_component(MediumHeading, "MediumHeading").$$render($$result, {}, {}, {
           default: () => {
-            return `Direkte Beteiligung war noch nie so einfach.
+            return `Hoffmann&#39;s Schuppen geh\xF6rt den Sch\xFClern.
                     <br><br>`;
           }
         })}</div>
@@ -49,8 +49,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           $$result,
           {
             next: true,
-            onClick: () => {
-            }
+            onClick: () => alert("Bitte wende dich pers\xF6nlich oder \xFCber IServ an unser Aktienteam")
           },
           {},
           {
