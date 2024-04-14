@@ -4,6 +4,7 @@ import "../../chunks/index4.js";
 import { S as SmallParagraph } from "../../chunks/SmallParagraph.js";
 import { S as SmallHeading } from "../../chunks/SmallHeading.js";
 import { R as RawButton, I as Icon } from "../../chunks/RawButton.js";
+import { I as InlineButton } from "../../chunks/InlineButton.js";
 import UAParser from "ua-parser-js";
 const cursorPosition = writable([0, 0]);
 const buttonHover = writable(false);
@@ -133,7 +134,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {},
     {}
   )}</header>
-    <div class="${"transition duration-long fixed z-30 " + escape(menuExpanded ? "-translate-x-0" : "-translate-x-full", true) + " w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col items-start gap-4"}">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
+    <div class="${"transition duration-long fixed z-30 " + escape(menuExpanded ? "-translate-x-0" : "-translate-x-full", true) + " w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col justify-between items-start"}"><div class="flex flex-col items-start gap-4">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
     return `${validate_component(RawButton, "RawButton").$$render(
       $$result,
       {
@@ -147,11 +148,30 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
               return `${escape(e[0])}`;
             }
           })}
-            `;
+                `;
         }
       }
     )}`;
   })}</div>
+        <div class="mt-32 font-display">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
+    default: () => {
+      return `Technischer Verantwortlicher:
+                ${validate_component(InlineButton, "InlineButton").$$render(
+        $$result,
+        {
+          openInNew: true,
+          onClick: () => window.location.href = "https://instagram.com/taavirubenhagen"
+        },
+        {},
+        {
+          default: () => {
+            return `Taavi R\xFCbenhagen
+                `;
+          }
+        }
+      )}`;
+    }
+  })}</div></div>
     ${slots.default ? slots.default({}) : ``}</main>`;
 });
 export {

@@ -11,6 +11,9 @@
         bg-background
         text-primary selection:primary font-body;
 }
+:root::selection {
+    @apply bg-secondary text-onSecondary;
+}
 ::-webkit-scrollbar {
     @apply w-0 h-0 background;
 }
@@ -46,17 +49,17 @@ button {
 
 
     .background {
-    @apply bg-background text-onBackground;
+        @apply bg-background text-onBackground;
     }
     .background::selection {
-    @apply bg-primary text-onPrimary;
+        @apply bg-primary text-onPrimary;
     }
 
     .primary {
-    @apply bg-primary text-onPrimary;
+        @apply bg-primary text-onPrimary;
     }
     .primary::selection {
-    @apply bg-background text-onBackground;
+        @apply bg-background text-onBackground;
     }
 }
 

@@ -19,7 +19,8 @@
       "_index4.js",
       "_SmallParagraph.js",
       "_SmallHeading.js",
-      "_RawButton.js"
+      "_RawButton.js",
+      "_InlineButton.js"
     ]
   },
   "src/routes/+error.svelte": {
@@ -93,8 +94,7 @@
     "imports": [
       "_index3.js",
       "_index4.js",
-      "_SmallParagraph.js",
-      "_RawButton.js",
+      "_InlineButton.js",
       "_Section.js"
     ]
   },
@@ -195,7 +195,7 @@
   "_index4.js": {
     "file": "chunks/index4.js",
     "css": [
-      "_app/immutable/assets/index.4e9ae83a.css"
+      "_app/immutable/assets/index.ba173e4f.css"
     ]
   },
   "_SmallParagraph.js": {
@@ -217,6 +217,15 @@
     "imports": [
       "_index3.js",
       "_index4.js"
+    ]
+  },
+  "_InlineButton.js": {
+    "file": "chunks/InlineButton.js",
+    "imports": [
+      "_index3.js",
+      "_index4.js",
+      "_SmallParagraph.js",
+      "_RawButton.js"
     ]
   },
   "_Section.js": {
