@@ -134,7 +134,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {},
     {}
   )}</header>
-    <div class="${"transition duration-long fixed z-30 " + escape(menuExpanded ? "-translate-x-0" : "-translate-x-full", true) + " w-full h-full background p-8 md:p-16 pt-16 md:pt-24 flex flex-col justify-between items-start"}"><div class="flex flex-col items-start gap-4">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
+    <div class="${"transition duration-long fixed z-30 " + escape(menuExpanded ? "-translate-x-0" : "-translate-x-full", true) + " w-full h-full background p-8 md:p-16 pt-24 flex flex-col justify-between items-start"}"><div class="flex flex-col items-start gap-4">${each([["Investieren", "/investor-relations"], ["Impressum", "/impressum"]], (e) => {
     return `${validate_component(RawButton, "RawButton").$$render(
       $$result,
       {
