@@ -32,9 +32,9 @@
 >
     <Cursor/>
     <header class='fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center'>
-        <Icon name='menu'/>
+        <Icon inverted name='menu'/>
         <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
-        <Button secondary onClick={() => {}}>
+        <Button mini secondary onClick={() => {}}>
             Investieren
         </Button>
     </header>

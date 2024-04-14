@@ -35,7 +35,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {
             secondary: true,
             download: true,
-            onClick: () => window.location.href = "/investor-relations/bedingungen/Bedingungen.pdf"
+            onClick: () => window.location.href = "/aktien/Bedingungen.pdf"
           },
           {},
           {
@@ -49,7 +49,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           $$result,
           {
             next: true,
-            onClick: () => alert("Bitte wende dich pers\xF6nlich oder \xFCber IServ an unser Aktienteam")
+            onClick: () => alert("Bitte wende dich pers\xF6nlich oder \xFCber IServ an unser Aktienteam.")
           },
           {},
           {

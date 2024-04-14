@@ -6,6 +6,7 @@
         RawButton,
     } from '$tavy';
 
+    export let mini = false;
     export let secondary = false;
     export let openInNew = false;
     export let next = false;
@@ -17,7 +18,7 @@
 <RawButton onClick={onClick}>
     <SmallParagraph>
         <div class=
-            'rounded-lg h-12 px-4
+            'rounded-lg {mini ? 'h-10' : 'h-12'} px-4
             {secondary ? 'bg-green-300 text-black' : 'bg-primary text-white'}
             flex justify-between items-center font-body'
         >

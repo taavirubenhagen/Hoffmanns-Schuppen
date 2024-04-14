@@ -3,6 +3,7 @@ import { p as page, n as navigating } from "../../chunks/stores.js";
 import { w as writable } from "../../chunks/index2.js";
 import { S as Section } from "../../chunks/Section.js";
 import { L as LargeHeading } from "../../chunks/LargeHeading.js";
+import { I as Icon } from "../../chunks/RawButton.js";
 import UAParser from "ua-parser-js";
 import { B as Button } from "../../chunks/Button.js";
 const cursorPosition = writable([0, 0]);
@@ -87,7 +88,8 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 
 
 <main class="relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground">${validate_component(Cursor, "Cursor").$$render($$result, {}, {}, {})}
-    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center"><img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-12 bg-onPrimary">
+    <header class="fixed w-full h-16 bg-secondary px-8 md:px-16 flex justify-between items-center">${validate_component(Icon, "Icon").$$render($$result, { name: "menu" }, {}, {})}
+        <img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">
         ${validate_component(Button, "Button").$$render(
     $$result,
     {
