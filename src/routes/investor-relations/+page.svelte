@@ -17,7 +17,7 @@
         <div>
             <div style='font-family: "Roboto Serif"'>
                 <MediumHeading>
-                    Hoffmann's Schuppen gehört den Schülern.
+                    Für eine Schülerfirma, die den Schülern gehört.
                     <br/><br/>
                 </MediumHeading>
             </div>

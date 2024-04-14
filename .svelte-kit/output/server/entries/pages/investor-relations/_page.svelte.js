@@ -29,7 +29,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
             `;
           }
         })}</div>
-        <div class="mb-8 w-full flex flex-col gap-4">
+        <div class="mb-0 w-full flex flex-col gap-4">
             ${validate_component(Button, "Button").$$render(
           $$result,
           {
