@@ -51,14 +51,14 @@
                 </RawButton>
             {/each}
         </div>
-        <div class='mt-32 w-full center_row text-center font-display'>
+        <!--<div class='mt-32 w-full center_row text-center font-display'>
             <SmallParagraph>
                 Technischer Verantwortlicher:
                 <InlineButton openInNew onClick={() => window.location.href = 'https://instagram.com/taavirubenhagen'}>
                     Taavi Rübenhagen
                 </InlineButton>
             </SmallParagraph>
-        </div>
+        </div>-->
     </div>
     <slot/>
 </main>

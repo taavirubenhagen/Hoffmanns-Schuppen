@@ -153,7 +153,7 @@ const Layout = create_ssr_component(($$result, $$props, $$bindings, slots) => {
       }
     )}`;
   })}</div>
-        <div class="mt-32 font-display">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
+        <div class="mt-32 w-full center_row text-center font-display">${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
     default: () => {
       return `Technischer Verantwortlicher:
                 ${validate_component(InlineButton, "InlineButton").$$render(
