@@ -20,10 +20,9 @@
         </MediumHeading>
         <SmallParagraph>
             Unsere Anteile beteiligen dich direkt am Erfolg von Hoffmann's Schuppen.
-            Für 5€ erhälst du eine Anteil, die dir Anspruch auf einen Anteil des Firmenkapitals gibt.
-            Du kannst deine Anteile jederzeit wieder an uns zurückgeben
-            und bekommst die bis dahin mit deinem Investment erzielten Gewinne ausgezahlt.
-            Die genauen Konditionen, die mit dem Anteilekauf einhergehen, findest du auf dem Informationsblatt.
+            Du erhälst Anspruch auf einen Anteil des Firmenkapitals und kannst dir
+            die mit deinem Investment erzielten Gewinne jederzeit auszahlen lassen.
+            Die genauen Konditionen findest du auf dem Informationsblatt.
         </SmallParagraph>
     </div>
     <div class='mb-8 w-full flex flex-col gap-4'>

@@ -3,6 +3,6 @@
 export const index = 8;
 let component_cache;
 export const component = async () => component_cache ??= (await import('../entries/pages/home/_page.svelte.js')).default;
-export const imports = ["_app/immutable/nodes/8.2c0c0f76.js","_app/immutable/chunks/index.1b07a146.js","_app/immutable/chunks/ua-parser.28fa800e.js","_app/immutable/chunks/MediumHeading.ff21dae4.js","_app/immutable/chunks/Section.a965c118.js","_app/immutable/chunks/Button.b3e039d9.js","_app/immutable/chunks/SmallParagraph.18b570eb.js","_app/immutable/chunks/RawButton.35a229a4.js","_app/immutable/chunks/index.8e8fe62f.js"];
-export const stylesheets = ["_app/immutable/assets/ua-parser.fd6dbaed.css"];
+export const imports = ["_app/immutable/nodes/8.35d82f39.js","_app/immutable/chunks/index.1b07a146.js","_app/immutable/chunks/ua-parser.dbf68c38.js","_app/immutable/chunks/MediumHeading.addc6077.js","_app/immutable/chunks/Section.ab14c9c1.js","_app/immutable/chunks/Button.1bde3e55.js","_app/immutable/chunks/SmallParagraph.f9b830aa.js","_app/immutable/chunks/RawButton.4b121e4d.js","_app/immutable/chunks/index.8e8fe62f.js"];
+export const stylesheets = ["_app/immutable/assets/ua-parser.6e92a6a8.css"];
 export const fonts = [];
