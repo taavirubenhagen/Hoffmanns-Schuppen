@@ -1,10 +1,10 @@
 <script lang="ts">
     import '$style';
     import {
-        LargeHeading, LargeParagraph, MediumHeading,
+        SmallHeading,
+        SmallParagraph,
         Section,
     } from "$tavy";
-  import SmallParagraph from '$tavy/main/text/paragraphs/SmallParagraph.svelte';
     import {
         Button,
         TextSection,
@@ -13,8 +13,7 @@
 
 
 <Section className='p-8 md:p-16'>
-    <LargeParagraph>Hoffmann's Schuppen, Schülerfirma der HvF Braunschweig</LargeParagraph><br/>
-    <br/><br/>
+    <SmallHeading>Hoffmann's Schuppen, Schülerfirma der HvF Braunschweig<br/><br/></SmallHeading>
     <SmallParagraph>Zuständiger Lehrer: Fred Lorenz</SmallParagraph><br/>
     <SmallParagraph>Anschrift: Sackring 15, 38118 Braunschweig</SmallParagraph><br/>
     <br/><br/>

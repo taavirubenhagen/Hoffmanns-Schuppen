@@ -67,7 +67,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         $$result,
         {
           headerMessage: "Investiere direkter als je zuvor ...",
-          bodyMessage: "\r\n                        Bei uns kannst du Aktien kaufen,\r\n                        die dich direkt am Erfolg von Hoffmann's Schuppen beteiligen.\r\n                        <br/>\r\n                        Au\xDFerdem freuen wir uns \xFCber jede*n, die*r bei Hoffmann's Schuppen mitarbeiten m\xF6chte.\r\n                        Egal ob Einkauf, Verkauf oder Marketing - dein Einsatz z\xE4hlt!",
+          bodyMessage: "\r\n                        Bei uns kannst du Anteile kaufen,\r\n                        die dich direkt am Erfolg von Hoffmann's Schuppen beteiligen.\r\n                        <br/>\r\n                        Au\xDFerdem freuen wir uns \xFCber jede*n, die*r bei Hoffmann's Schuppen mitarbeiten m\xF6chte.\r\n                        Egal ob Einkauf, Verkauf oder Marketing - dein Einsatz z\xE4hlt!",
           primaryButtonTitle: "Investiere jetzt",
           backgroundClick: () => window.location.href = "/drafts/hoffmanns-schuppen/investor-relations",
           secondaryButtonTitle: "Oder bewirb dich",

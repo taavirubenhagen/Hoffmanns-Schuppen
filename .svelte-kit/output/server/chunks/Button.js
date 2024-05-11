@@ -29,7 +29,7 @@ const Button = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           return `<div class="${"rounded-lg " + escape(mini ? "h-10" : "h-12", true) + " px-4 " + escape(
             secondary ? "bg-green-300 text-black" : "bg-primary text-white",
             true
-          ) + " flex justify-between items-center font-body"}">${slots.default ? slots.default({}) : ``}
+          ) + " flex justify-between items-center font-display"}">${slots.default ? slots.default({}) : ``}
             <div class="inline relative top-0.5">${openInNew ? `${validate_component(Icon, "Icon").$$render(
             $$result,
             {

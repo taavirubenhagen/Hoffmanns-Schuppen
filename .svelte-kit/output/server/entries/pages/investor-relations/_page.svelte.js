@@ -22,11 +22,11 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
         })}</div>
         ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
           default: () => {
-            return `Unsere Aktien beteiligen dich direkt am Erfolg von Hoffmann&#39;s Schuppen.
-            F\xFCr 5\u20AC erh\xE4lst du eine Aktie, die dir Anspruch auf einen Anteil des Firmenkapitals gibt.
-            Du kannst deine Aktien jederzeit wieder an uns zur\xFCckgeben
+            return `Unsere Anteile beteiligen dich direkt am Erfolg von Hoffmann&#39;s Schuppen.
+            F\xFCr 5\u20AC erh\xE4lst du eine Anteil, die dir Anspruch auf einen Anteil des Firmenkapitals gibt.
+            Du kannst deine Anteile jederzeit wieder an uns zur\xFCckgeben
             und bekommst die bis dahin mit deinem Investment erzielten Gewinne ausgezahlt.
-            Die genauen Konditionen, die mit dem Aktienkauf einhergehen, findest du auf dem Informationsblatt.
+            Die genauen Konditionen, die mit dem Anteilekauf einhergehen, findest du auf dem Informationsblatt.
         `;
           }
         })}</div>
@@ -36,7 +36,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {
             secondary: true,
             download: true,
-            onClick: () => window.location.href = "/aktien/Bedingungen.pdf"
+            onClick: () => window.location.href = "/Anteile/Bedingungen.pdf"
           },
           {},
           {
@@ -50,7 +50,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           $$result,
           {
             next: true,
-            onClick: () => alert("Bitte wende dich pers\xF6nlich oder \xFCber IServ an unser Aktienteam.")
+            onClick: () => alert("Bitte wende dich pers\xF6nlich oder \xFCber IServ an unser Anteileteam.")
           },
           {},
           {

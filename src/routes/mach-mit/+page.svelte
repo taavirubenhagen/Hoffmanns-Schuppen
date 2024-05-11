@@ -22,7 +22,7 @@
                 <TextSection
                     headerMessage='Investiere direkter als je zuvor ...'
                     bodyMessage="
-                        Bei uns kannst du Aktien kaufen,
+                        Bei uns kannst du Anteile kaufen,
                         die dich direkt am Erfolg von Hoffmann's Schuppen beteiligen.
                         <br/>
                         Außerdem freuen wir uns über jede*n, die*r bei Hoffmann's Schuppen mitarbeiten möchte.

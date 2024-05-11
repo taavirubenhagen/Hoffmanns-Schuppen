@@ -5,6 +5,6 @@
 
 
 
-<a id="dl" style="display: none" href="/aktien/Bedingungen.pdf" download>
+<a id="dl" style="display: none" href="/Anteile/Bedingungen.pdf" download>
     Download
 </a>

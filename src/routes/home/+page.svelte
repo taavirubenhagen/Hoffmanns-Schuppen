@@ -1,44 +1,35 @@
 <script lang="ts">
     import '$style';
     import {
-        LargeHeading, MediumHeading,
+        MediumHeading,
+        SmallParagraph,
         Section,
     } from "$tavy";
-    import { Button } from '$tavy/hoffmanns';
+    import {
+        Button,
+        TextSection,
+    } from '$tavy/hoffmanns';
 </script>
 
 
-<div style='font-family: "Roboto Serif"'>
-    <Section className='bg-green-900 text-white'>
-        <div class='relative'>
-            <img
-                src="/drafts/hoffmanns-schuppen/local_business.jpg" alt=""
-                class="w-full h-screen object-cover brightness-75"
-            >
-            <div class=
-                'absolute left-8 bottom-16 md:bottom-0
-                md:h-full flex flex-col justify-center gap-8'
-            >
-                <MediumHeading>
-                    Nachhaltig, nützlich, nahbar.<br/>
-                    Willkommen bei Hoffmann's Schuppen.
-                </MediumHeading>
-                <div class='flex gap-4'>
-                    <Button onClick={() => window.location.href = '/drafts/hoffmanns-schuppen/produkte'}>
-                        Produkte entdecken
-                    </Button>
-                    <Button secondary onClick={() => window.location.href = '/drafts/hoffmanns-schuppen/mach-mit'}>
-                        Mach mit
-                    </Button>
-                </div>
-            </div>
-        </div>
-        {#if false}
-            <div class='grid grid-cols-2 gap-8'>
-                {#each [0, 0, 0, 0] as _}
-                    <div class='rounded-2xl w-full h-64 bg-green-200'></div>
-                {/each}
-            </div>
-        {/if}
-    </Section>
-</div>
+<!--
+    Da der QR-Code auf den Anteilsscheinen hierhin weiterleitet,
+    muss die Investor-Relations-Seite immer sofort erreichbar sein
+-->
+<Section className='p-8 md:p-16 center_col'>
+    <img
+        src="/images/anteilsausgabe.jpg" alt="Linus mit Anteil"
+        class="fixed brightness-50"
+    />
+    <div class='relative z-10 text-white'>
+        <MediumHeading>
+            Eine Schülerfirma in der Hand der Schüler.
+            <br/><br/>
+        </MediumHeading>
+    </div>
+    <div class='mb-8 w-full flex flex-col gap-4'>
+        <Button next onClick={() => window.location.href = '/investor-relations'}>
+            Jetzt investieren
+        </Button>
+    </div>
+</Section>

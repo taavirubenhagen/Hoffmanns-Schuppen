@@ -28,7 +28,7 @@
     <Cursor/>
     <header class='fixed z-40 w-full h-16 {menuExpanded ? 'bg-background' : 'bg-secondary'} px-8 md:px-16 flex justify-between items-center'>
         <IconButton inverted={!menuExpanded} name={menuExpanded ? 'close' : 'menu'} onClick={() => menuExpanded = !menuExpanded}/>
-        <RawButton onClick={() => window.location.href = '/'}>
+        <RawButton onClick={() => window.location.href = '/home'}>
             <div class='font-display {menuExpanded ? 'text-onBackground' : 'text-onPrimary'}'>
                 <SmallParagraph>Hoffmann's Schuppen</SmallParagraph>
             </div>
@@ -39,10 +39,11 @@
     <div
         class=
         'transition duration-long fixed z-30 {menuExpanded ? '-translate-x-0' : '-translate-x-full'}
-        w-full h-full background p-8 md:p-16 pt-32 flex flex-col justify-between items-start'
+        w-full h-full background p-8 md:p-16 pt-24 flex flex-col justify-between items-start'
     >
         <div class='flex flex-col items-start gap-4'>
             {#each [
+                ['Über uns', '/home'],
                 ['Investieren', '/investor-relations'],
                 ['Impressum', '/impressum'],
             ] as e}
