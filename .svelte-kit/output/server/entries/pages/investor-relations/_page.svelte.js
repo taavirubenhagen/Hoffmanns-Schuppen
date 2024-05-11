@@ -14,12 +14,12 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     {},
     {
       default: () => {
-        return `<div><div class="font-display">${validate_component(MediumHeading, "MediumHeading").$$render($$result, {}, {}, {
+        return `<div>${validate_component(MediumHeading, "MediumHeading").$$render($$result, {}, {}, {
           default: () => {
             return `F\xFCr eine Sch\xFClerfirma, die den Sch\xFClern geh\xF6rt.
-                <br><br>`;
+            <br><br>`;
           }
-        })}</div>
+        })}
         ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
           default: () => {
             return `Unsere Anteile beteiligen dich direkt am Erfolg von Hoffmann&#39;s Schuppen.
@@ -55,7 +55,7 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
           {},
           {
             default: () => {
-              return `Jetzt kaufen
+              return `Jetzt investieren
         `;
             }
           }

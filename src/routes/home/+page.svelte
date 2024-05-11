@@ -27,7 +27,7 @@
             <br/><br/>
         </MediumHeading>
     </div>
-    <div class='mb-8 w-full flex flex-col gap-4'>
+    <div class='mb-8 w-full flex flex-col gap-4 md:items-center'>
         <Button next onClick={() => window.location.href = '/investor-relations'}>
             Jetzt investieren
         </Button>
