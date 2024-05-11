@@ -21,7 +21,7 @@ module.exports = {
     theme: {
         fontFamily: {
             body: ['Roboto Slab'],
-            display: ['Permanent Marker', 'Caveat Brush'],
+            display: ['DM Serif Display', 'Permanent Marker', 'Caveat Brush'],
             sans: ['Lexend'],
             mono: ['IBM Plex Mono'],
         },

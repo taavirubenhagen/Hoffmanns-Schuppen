@@ -45,8 +45,9 @@ declare module '$env/static/private' {
 	export const COMPUTERNAME: string;
 	export const ComSpec: string;
 	export const DriverData: string;
-	export const EFC_5196: string;
-	export const FILE_PWD: string;
+	export const EFC_9384: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GHCUP_INSTALL_BASE_PREFIX: string;
 	export const GIT_ASKPASS: string;
 	export const GOPATH: string;
@@ -58,10 +59,7 @@ declare module '$env/static/private' {
 	export const LAST_EXIT_CODE: string;
 	export const LOCALAPPDATA: string;
 	export const LOGONSERVER: string;
-	export const NODE_ENV: string;
 	export const NUMBER_OF_PROCESSORS: string;
-	export const NUSHELL_CURRENT_SHELL: string;
-	export const OLDPWD: string;
 	export const OneDrive: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
 	export const OS: string;
@@ -100,7 +98,6 @@ declare module '$env/static/private' {
 	export const windir: string;
 	export const _MSYS2_BASH: string;
 	export const _MSYS2_PREFIX: string;
-	export const __COMPAT_LAYER: string;
 }
 
 /**
@@ -149,8 +146,9 @@ declare module '$env/dynamic/private' {
 		COMPUTERNAME: string;
 		ComSpec: string;
 		DriverData: string;
-		EFC_5196: string;
-		FILE_PWD: string;
+		EFC_9384: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GHCUP_INSTALL_BASE_PREFIX: string;
 		GIT_ASKPASS: string;
 		GOPATH: string;
@@ -162,10 +160,7 @@ declare module '$env/dynamic/private' {
 		LAST_EXIT_CODE: string;
 		LOCALAPPDATA: string;
 		LOGONSERVER: string;
-		NODE_ENV: string;
 		NUMBER_OF_PROCESSORS: string;
-		NUSHELL_CURRENT_SHELL: string;
-		OLDPWD: string;
 		OneDrive: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
 		OS: string;
@@ -204,7 +199,6 @@ declare module '$env/dynamic/private' {
 		windir: string;
 		_MSYS2_BASH: string;
 		_MSYS2_PREFIX: string;
-		__COMPAT_LAYER: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: `${string}`]: string | undefined;
 	}
