@@ -19,7 +19,7 @@
 <Section className='p-8 md:p-16 center_col'>
     <img
         src="/images/anteilsausgabe.jpg" alt="Linus mit Anteil"
-        class="fixed brightness-50"
+        class="fixed min-h-screen brightness-50"
     />
     <div class='relative z-10 text-white'>
         <MediumHeading>

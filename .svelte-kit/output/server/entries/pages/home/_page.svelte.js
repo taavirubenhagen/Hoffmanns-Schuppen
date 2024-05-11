@@ -15,7 +15,7 @@ ${validate_component(Section, "Section").$$render($$result, { className: "p-8 md
             <br><br>`;
         }
       })}</div>
-    <div class="mb-8 w-full flex flex-col gap-4">${validate_component(Button, "Button").$$render(
+    <div class="mb-8 w-full flex flex-col gap-4 md:items-center">${validate_component(Button, "Button").$$render(
         $$result,
         {
           next: true,

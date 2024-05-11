@@ -129,7 +129,10 @@ const options = {
 \r
 		<link rel="preconnect" href="https://fonts.googleapis.com"/>\r
 		<link rel="preconnect" href="https://fonts.gstatic.com"/>\r
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Roboto+Slab&family=DM+Serif+Display&family=Roboto+Serif&family=Permanent+Marker&family=IBM+Plex+Mono&family=Lexend&display=swap"/>\r
+		<link\r
+            rel="stylesheet"\r
+            href="https://fonts.googleapis.com/css2?family=Roboto+Slab&family=DM+Serif+Display&family=Permanent+Marker&family=IBM+Plex+Mono&family=Lexend&display=swap"\r
+        />\r
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css">\r
 		\r
 		` + head + "\r\n	</head>\r\n    <script>console.log('Hello from app.html');<\/script>\r\n	<body>\r\n		<div>" + body + "</div>\r\n	</body>\r\n</html>\r\n",
@@ -204,7 +207,7 @@ const options = {
 		<div class="error">
 			<span class="status">` + status + '</span>\n			<div class="message">\n				<h1>' + message + "</h1>\n			</div>\n		</div>\n	</body>\n</html>\n"
   },
-  version_hash: "180xqpi"
+  version_hash: "11ka50x"
 };
 function get_hooks() {
   return {};
