@@ -19,12 +19,11 @@
 <Section className='p-8 md:p-16 center_col'>
     <img
         src="/images/glueckliches_team.jpg" alt="Team"
-        class="fixed min-h-screen brightness-50"
+        class="fixed min-h-screen brightness-50 object-cover"
     />
     <div class='relative z-10 text-white'>
         <MediumHeading>
-            Eine Schülerfirma in der Hand der Schüler.
-            
+            Eine Schülerfirma in der Hand der Schüler*innen.
             <br/><br/>
         </MediumHeading>
     </div>
