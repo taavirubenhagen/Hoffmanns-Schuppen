@@ -1,7 +1,7 @@
 <script lang="ts">
     import '$style';
-    import { Icon, MediumParagraph } from '$tavy';
-    import { RawButton } from '$tavy';
+    import { Icon, MediumParagraph } from '$design';
+    import { RawButton } from '$design';
 
     export let inverted = false;
     export let autofocus = false;

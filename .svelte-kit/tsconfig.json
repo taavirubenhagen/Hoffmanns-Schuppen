@@ -7,11 +7,11 @@
 			"$static/*": [
 				"../static/*"
 			],
-			"$tavy": [
-				"../src/tavy"
+			"$design": [
+				"../src/design"
 			],
-			"$tavy/*": [
-				"../src/tavy/*"
+			"$design/*": [
+				"../src/design/*"
 			],
 			"$style": [
 				"../src/global.postcss"

@@ -3,7 +3,7 @@
     import {
         Icon,
         RawButton,
-    } from '$tavy';
+    } from '$design';
 
     export let inverted = false;
     export let name: string;

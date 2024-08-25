@@ -3,12 +3,12 @@
     import {
         MediumHeading,
         Section,
-    } from "$tavy";
-  import SmallParagraph from '$tavy/main/text/paragraphs/SmallParagraph.svelte';
+    } from "$design";
+  import SmallParagraph from '$design/main/text/paragraphs/SmallParagraph.svelte';
     import {
         Button,
         TextSection,
-    } from '$tavy/hoffmanns';
+    } from '$design/hoffmanns';
 </script>
 
 

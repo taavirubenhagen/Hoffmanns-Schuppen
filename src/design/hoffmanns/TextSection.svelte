@@ -3,7 +3,7 @@
     import {
         SmallParagraph,
         MediumHeading,
-    } from '$tavy';
+    } from '$design';
     import {
         Button,
     } from '.';

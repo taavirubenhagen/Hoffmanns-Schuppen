@@ -2,7 +2,7 @@
     import '$style';
     import {
         Paragraph,
-    } from '$tavy';
+    } from '$design';
 </script>
 
 <Paragraph><slot/></Paragraph>

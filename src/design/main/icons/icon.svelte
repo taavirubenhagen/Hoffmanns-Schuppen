@@ -1,7 +1,7 @@
 <script lang="ts">
     import {
         tavyVersion,
-    } from '$tavy/info';
+    } from '$design/info';
 
     export let name: string;
     export let inverted = false;

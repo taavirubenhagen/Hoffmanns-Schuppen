@@ -4,7 +4,7 @@
         SmallParagraph,
         Icon,
         RawButton,
-    } from '$tavy';
+    } from '$design';
 
     export let mini = false;
     export let secondary = false;
@@ -22,7 +22,7 @@
             {secondary ? 'bg-green-300 text-black' : 'bg-primary text-white'}
             flex justify-between items-center font-display'
         >
-            <slot/>
+            <slot/>&nbsp;&nbsp;
             <div class='inline relative top-0.5'>
                 {#if openInNew}
                     <Icon inverted={!secondary} name="open-in-new"/>

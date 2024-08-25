@@ -1,9 +1,8 @@
 <script lang="ts">
     import { page, navigating } from '$app/stores';
-    import { cursorPosition, globalScrollY } from "$state";
     import "$style";
-    import { Section, LargeHeading, Cursor, SmallParagraph, RawButton, SmallHeading, InlineButton } from "$tavy";
-    import { Button, IconButton } from "$tavy/hoffmanns";
+    import { Section, LargeHeading, SmallParagraph, RawButton, SmallHeading, InlineButton } from "$design";
+    import { Button, IconButton } from "$design/hoffmanns";
 
 
     let windowHeight: number;
@@ -18,14 +17,8 @@
 
 
 <main
-    on:mousemove={(event) => $cursorPosition = [event.clientX, event.clientY]}
-    on:scroll={(event) => {
-        scrollY = event?.currentTarget?.scrollTop;
-        globalScrollY.set(event?.currentTarget?.scrollTop);
-    }}
-    class='relative h-screen overflow-x-hidden cursor-none bg-white text-onBackground'
+    class='relative h-screen overflow-x-hidden bg-white text-onBackground'
 >
-    <Cursor/>
     <header class='fixed z-40 w-full h-16 {menuExpanded ? 'bg-background' : 'bg-secondary'} px-8 md:px-16 flex justify-between items-center'>
         <IconButton inverted={!menuExpanded} name={menuExpanded ? 'close' : 'menu'} onClick={() => menuExpanded = !menuExpanded}/>
         <RawButton onClick={() => window.location.href = '/home'}>
@@ -34,7 +27,9 @@
             </div>
         </RawButton>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
-        <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
+        <div class="opacity-0">
+            <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
+        </div>
     </header>
     <div
         class=
@@ -42,9 +37,10 @@
         w-full h-full background p-8 md:p-16 pt-24 flex flex-col justify-between items-start'
     >
         <div class='flex flex-col items-start gap-4'>
+            <!--['Investieren', '/investor-relations'],-->
             {#each [
-                ['Über uns', '/home'],
-                ['Investieren', '/investor-relations'],
+                ['Home', '/home'],
+                ['Über uns', '/ueber-uns'],
                 ['Impressum', '/impressum'],
             ] as e}
                 <RawButton onClick={() => window.location.href = e[1]}>

@@ -1,7 +1,7 @@
 <script lang="ts">
     import '$style';
-    import { Icon, RawButton } from '$tavy';
-    import { SmallParagraph } from '$tavy';
+    import { Icon, RawButton } from '$design';
+    import { SmallParagraph } from '$design';
 
     export let invisible = false;
     export let inverted = false;

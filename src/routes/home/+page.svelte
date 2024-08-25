@@ -4,11 +4,11 @@
         MediumHeading,
         SmallParagraph,
         Section,
-    } from "$tavy";
+    } from "$design";
     import {
         Button,
         TextSection,
-    } from '$tavy/hoffmanns';
+    } from '$design/hoffmanns';
 </script>
 
 
@@ -24,12 +24,13 @@
     <div class='relative z-10 text-white'>
         <MediumHeading>
             Eine Schülerfirma in der Hand der Schüler.
+            
             <br/><br/>
         </MediumHeading>
     </div>
     <div class='mb-8 w-full flex flex-col gap-4 md:items-center'>
-        <Button next onClick={() => window.location.href = '/investor-relations'}>
-            Jetzt investieren
+        <Button next onClick={() => window.location.href = '/ueber-uns'}>
+            Wer wir sind
         </Button>
     </div>
 </Section>

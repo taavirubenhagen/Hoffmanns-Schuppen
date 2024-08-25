@@ -4,14 +4,15 @@
         SmallHeading,
         SmallParagraph,
         Section,
-    } from "$tavy";
+    } from "$design";
     import {
         Button,
         TextSection,
-    } from '$tavy/hoffmanns';
+    } from '$design/hoffmanns';
 </script>
 
 
+<!--TODO: Rechtsgültig machen-->
 <Section className='p-8 md:p-16'>
     <SmallHeading>Hoffmann's Schuppen, Schülerfirma der HvF Braunschweig<br/><br/></SmallHeading>
     <SmallParagraph>Zuständiger Lehrer: Fred Lorenz</SmallParagraph><br/>

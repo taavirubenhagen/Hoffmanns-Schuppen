@@ -5,7 +5,7 @@
         MediumParagraph,
         Icon,
         RawButton,
-    } from '$tavy';
+    } from '$design';
 
     export let inverted = false;
     export let nested = false;
