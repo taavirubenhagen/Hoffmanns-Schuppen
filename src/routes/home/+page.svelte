@@ -18,7 +18,7 @@
 -->
 <Section className='p-8 md:p-16 center_col'>
     <img
-        src="/images/anteilsausgabe.jpg" alt="Linus mit Anteil"
+        src="/images/glueckliches_team.jpg" alt="Team"
         class="fixed min-h-screen brightness-50"
     />
     <div class='relative z-10 text-white'>
