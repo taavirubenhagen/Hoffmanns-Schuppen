@@ -10,12 +10,9 @@
 		"src/routes/admin/access/[password]/+page.server.ts"
 	],
 	"/admin/login/[state]": [],
-	"/countdown": [],
 	"/home": [],
 	"/impressum": [],
 	"/investor-relations": [],
 	"/investor-relations/bedingungen": [],
-	"/mach-mit": [],
-	"/produkte": [],
 	"/ueber-uns": []
 }

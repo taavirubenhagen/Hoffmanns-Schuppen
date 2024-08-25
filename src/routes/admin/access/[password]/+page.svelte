@@ -1,6 +1,6 @@
 <script lang="ts">
     import '$style';
-    import { Section, SmallHeading } from "$tavy";
+    import { Section, SmallHeading } from "$design";
 </script>
 
 

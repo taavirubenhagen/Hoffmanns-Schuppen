@@ -1,17 +1,19 @@
-import { h as getContext, c as create_ssr_component, v as validate_component, e as escape, g as add_attribute, d as subscribe } from "../../../../../chunks/index3.js";
-import "../../../../../chunks/index4.js";
+import { g as getContext, c as create_ssr_component, v as validate_component, e as escape, d as add_attribute, f as subscribe } from "../../../../../chunks/index2.js";
+import "../../../../../chunks/index3.js";
 import { S as Section } from "../../../../../chunks/Section.js";
-import "ua-parser-js";
 import { R as RawButton, I as Icon } from "../../../../../chunks/RawButton.js";
 const getStores = () => {
   const stores = getContext("__svelte__");
   return {
+    /** @type {typeof page} */
     page: {
       subscribe: stores.page.subscribe
     },
+    /** @type {typeof navigating} */
     navigating: {
       subscribe: stores.navigating.subscribe
     },
+    /** @type {typeof updated} */
     updated: stores.updated
   };
 };
@@ -30,14 +32,10 @@ const TextField = create_ssr_component(($$result, $$props, $$bindings, slots) =>
   let { onSubmit } = $$props;
   let { placeholder = "" } = $$props;
   let input = "";
-  if ($$props.inverted === void 0 && $$bindings.inverted && inverted !== void 0)
-    $$bindings.inverted(inverted);
-  if ($$props.autofocus === void 0 && $$bindings.autofocus && autofocus !== void 0)
-    $$bindings.autofocus(autofocus);
-  if ($$props.onSubmit === void 0 && $$bindings.onSubmit && onSubmit !== void 0)
-    $$bindings.onSubmit(onSubmit);
-  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0)
-    $$bindings.placeholder(placeholder);
+  if ($$props.inverted === void 0 && $$bindings.inverted && inverted !== void 0) $$bindings.inverted(inverted);
+  if ($$props.autofocus === void 0 && $$bindings.autofocus && autofocus !== void 0) $$bindings.autofocus(autofocus);
+  if ($$props.onSubmit === void 0 && $$bindings.onSubmit && onSubmit !== void 0) $$bindings.onSubmit(onSubmit);
+  if ($$props.placeholder === void 0 && $$bindings.placeholder && placeholder !== void 0) $$bindings.placeholder(placeholder);
   return `${validate_component(MediumParagraph, "MediumParagraph").$$render($$result, {}, {}, {
     default: () => {
       return `<div class="flex"><div class="${escape(inverted ? "invert" : "", true) + " rounded-l-lg border-2 border-green-900"}">

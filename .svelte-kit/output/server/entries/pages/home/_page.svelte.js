@@ -1,8 +1,7 @@
-import { c as create_ssr_component, v as validate_component } from "../../../chunks/index3.js";
-import "../../../chunks/index4.js";
+import { c as create_ssr_component, v as validate_component } from "../../../chunks/index2.js";
+import "../../../chunks/index3.js";
 import { M as MediumHeading } from "../../../chunks/MediumHeading.js";
 import { S as Section } from "../../../chunks/Section.js";
-import "ua-parser-js";
 import { B as Button } from "../../../chunks/Button.js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   return `
@@ -11,7 +10,8 @@ ${validate_component(Section, "Section").$$render($$result, { className: "p-8 md
       return `<img src="/images/anteilsausgabe.jpg" alt="Linus mit Anteil" class="fixed min-h-screen brightness-50">
     <div class="relative z-10 text-white">${validate_component(MediumHeading, "MediumHeading").$$render($$result, {}, {}, {
         default: () => {
-          return `Eine Sch\xFClerfirma in der Hand der Sch\xFCler.
+          return `Eine Schülerfirma in der Hand der Schüler.
+            
             <br><br>`;
         }
       })}</div>
@@ -19,12 +19,12 @@ ${validate_component(Section, "Section").$$render($$result, { className: "p-8 md
         $$result,
         {
           next: true,
-          onClick: () => window.location.href = "/investor-relations"
+          onClick: () => window.location.href = "/ueber-uns"
         },
         {},
         {
           default: () => {
-            return `Jetzt investieren
+            return `Wer wir sind
         `;
           }
         }

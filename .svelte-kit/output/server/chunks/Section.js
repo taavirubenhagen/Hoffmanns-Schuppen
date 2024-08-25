@@ -1,10 +1,9 @@
-import { c as create_ssr_component, e as escape } from "./index3.js";
-import "./index4.js";
+import { c as create_ssr_component, e as escape } from "./index2.js";
+import "./index3.js";
 const Section = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let { className = "" } = $$props;
   let windowHeight;
-  if ($$props.className === void 0 && $$bindings.className && className !== void 0)
-    $$bindings.className(className);
+  if ($$props.className === void 0 && $$bindings.className && className !== void 0) $$bindings.className(className);
   return `
 
 

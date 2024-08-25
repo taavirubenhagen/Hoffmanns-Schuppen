@@ -1,20 +1,20 @@
-import { c as create_ssr_component, v as validate_component } from "../../../chunks/index3.js";
-import "../../../chunks/index4.js";
+import { c as create_ssr_component, v as validate_component } from "../../../chunks/index2.js";
+import "../../../chunks/index3.js";
 import { S as SmallParagraph } from "../../../chunks/SmallParagraph.js";
 import { S as SmallHeading } from "../../../chunks/SmallHeading.js";
 import { S as Section } from "../../../chunks/Section.js";
-import "ua-parser-js";
 const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
-  return `${validate_component(Section, "Section").$$render($$result, { className: "p-8 md:p-16" }, {}, {
+  return `
+${validate_component(Section, "Section").$$render($$result, { className: "p-8 md:p-16" }, {}, {
     default: () => {
       return `${validate_component(SmallHeading, "SmallHeading").$$render($$result, {}, {}, {
         default: () => {
-          return `Hoffmann&#39;s Schuppen, Sch\xFClerfirma der HvF Braunschweig<br><br>`;
+          return `Hoffmann&#39;s Schuppen, Schülerfirma der HvF Braunschweig<br><br>`;
         }
       })}
     ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
-          return `Zust\xE4ndiger Lehrer: Fred Lorenz`;
+          return `Zuständiger Lehrer: Fred Lorenz`;
         }
       })}<br>
     ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
@@ -25,18 +25,18 @@ const Page = create_ssr_component(($$result, $$props, $$bindings, slots) => {
     <br><br>
     ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
-          return `E-Mail f\xFCr Rechtliches: lorenz@hvf-bs.net`;
+          return `E-Mail für Rechtliches: lorenz@hvf-bs.net`;
         }
       })}<br>
     ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
-          return `E-Mails f\xFCr Gesch\xE4ftliches: bjoern.merkes@hvf-bs.net; lunis.hildebrandt@hvf-bs.net`;
+          return `E-Mails für Geschäftliches: bjoern.merkes@hvf-bs.net; lunis.hildebrandt@hvf-bs.net`;
         }
       })}<br>
     <br><br>
     ${validate_component(SmallParagraph, "SmallParagraph").$$render($$result, {}, {}, {
         default: () => {
-          return `Technischer Verantwortlicher: Taavi R\xFCbenhagen (taavi.ruebenhagen@hvf-bs.net)`;
+          return `Technischer Verantwortlicher: Taavi Rübenhagen (taavi.ruebenhagen@hvf-bs.net)`;
         }
       })}`;
     }

@@ -1,8 +1,8 @@
 <script lang="ts">
     import { page } from '$app/stores';
     import '$style';
-    import { Section } from "$tavy";
-    import { TextField } from '$tavy/hoffmanns';
+    import { Section } from "$design";
+    import { TextField } from '$design/hoffmanns';
 
     const onPasswordSubmitted = (input: string) => {
         console.log(input);
