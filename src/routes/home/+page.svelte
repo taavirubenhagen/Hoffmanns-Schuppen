@@ -28,8 +28,8 @@
         </MediumHeading>
     </div>
     <div class='mb-8 w-full flex flex-col gap-4 md:items-center'>
-        <Button next onClick={() => window.location.href = '/ueber-uns'}>
-            Wer wir sind
+        <Button next onClick={() => window.location.href = '/investor-relations'}>
+            Investieren
         </Button>
     </div>
 </Section>

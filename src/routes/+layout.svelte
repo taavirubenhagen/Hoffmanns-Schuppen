@@ -27,9 +27,7 @@
             </div>
         </RawButton>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
-        <div class="opacity-0">
-            <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
-        </div>
+        <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
     </header>
     <div
         class=
@@ -38,9 +36,10 @@
     >
         <div class='flex flex-col items-start gap-4'>
             <!--['Investieren', '/investor-relations'],-->
+            <!--['Über uns', '/ueber-uns'],-->
             {#each [
                 ['Home', '/home'],
-                ['Über uns', '/ueber-uns'],
+                ['Investieren', '/investor-relations'],
                 ['Impressum', '/impressum'],
             ] as e}
                 <RawButton onClick={() => window.location.href = e[1]}>
