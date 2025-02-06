@@ -12,7 +12,8 @@
 	"/admin/login/[state]": [],
 	"/home": [],
 	"/impressum": [],
+	"/info": [],
 	"/investor-relations": [],
 	"/investor-relations/bedingungen": [],
-	"/ueber-uns": []
+	"/mitmachen": []
 }

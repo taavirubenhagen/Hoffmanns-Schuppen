@@ -25,7 +25,7 @@
             flex {only ? "justify-center" : "justify-between"} items-center font-display'
         >
             <slot/>&nbsp;&nbsp;
-            <div class='inline relative {only ? "-left-0.5" : "top-0.5"}'>
+            <div class='inline relative {only ? "-left-0.5" : ""}'>
                 {#if openInNew}
                     <Icon inverted={!secondary} name="open-in-new"/>
                 {:else if previous}

@@ -44,8 +44,8 @@
         <br/><br/>
         </MediumHeading>
         <div class='mb-8 w-full flex flex-col gap-4 md:items-center'>
-            <Button next onClick={() => window.location.href = '/investor-relations'}>
-                Investieren
+            <Button next onClick={() => window.location.href = '/info'}>
+                Mitmachen
             </Button>
         </div>
     </div>
