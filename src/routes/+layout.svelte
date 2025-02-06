@@ -27,7 +27,7 @@
             </div>
         </RawButton>
         <!--<img src="/logos/logo_solid.png" alt="Logo" class="rounded-full h-10 bg-onPrimary">-->
-        <IconButton inverted={!menuExpanded} name='euro' onClick={() => window.location.href = '/investor-relations'}/>
+        <IconButton inverted={!menuExpanded} name='instagram' onClick={() => window.location.href = 'https://instagram.com/hoffmanns.schuppen'}/>
     </header>
     <div
         class=
