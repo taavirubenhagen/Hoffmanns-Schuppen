@@ -15,7 +15,12 @@ const config = {
 			$design: path.resolve("./src/design/"),
 			$style: path.resolve("./src/global.postcss"),
 			$state: path.resolve("./src/state.ts"),
-		}
+		},
+	},
+	vite: {
+      optimizeDeps: {
+        include: ['lodash.get', 'lodash.isequal', 'lodash.clonedeep']
+      }
 	}
 };
 

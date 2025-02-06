@@ -19,7 +19,7 @@
 <main
     class='relative h-screen overflow-x-hidden bg-white text-onBackground'
 >
-    <header class='fixed z-40 w-full h-16 {menuExpanded ? 'bg-background' : 'bg-secondary'} px-8 md:px-16 flex justify-between items-center'>
+    <header class='fixed z-40 w-full h-16 {menuExpanded ? 'bg-background' : 'bg-primary'} px-8 md:px-16 flex justify-between items-center'>
         <IconButton inverted={!menuExpanded} name={menuExpanded ? 'close' : 'menu'} onClick={() => menuExpanded = !menuExpanded}/>
         <RawButton onClick={() => window.location.href = '/home'}>
             <div class='font-display {menuExpanded ? 'text-onBackground' : 'text-onPrimary'}'>

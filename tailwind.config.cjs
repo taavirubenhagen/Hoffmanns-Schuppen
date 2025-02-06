@@ -32,7 +32,7 @@ module.exports = {
                 primary: "#005500",
                 accent: '#00EE00',
                 onPrimary: "#FFF",
-                secondary: "#005500",
+                secondary: "#CCFFCC",
                 onSecondary: "#000",
                 error: '#550000',
                 onError: "#FFF",
