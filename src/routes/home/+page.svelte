@@ -40,9 +40,8 @@
     <div class="h-16"></div>
     <div>
         <MediumHeading>
-        Eine Schülerfirma in der Hand der Schüler*innen.
+        Eine Schülerfirma in der Hand der Schüler.
         <br/><br/>
         </MediumHeading>
-        Zum Mitmachen schreibt uns gerne bei IServ oder Insta an.
     </div>
 </Section>
