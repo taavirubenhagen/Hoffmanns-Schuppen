@@ -1,15 +1,10 @@
 <script lang="ts">
-    import {
-        tavyVersion,
-    } from '$design/info';
-
     export let name: string;
     export let inverted = false;
     // Defaults to fit 'text-base'
     export let size = 16;
 
-    const src = `/tavy/icons/${tavyVersion}/svg/${name}.svg`;
-    //`https://raw.githubusercontent.com/taavirubenhagen/taavirubenhagen/main/tavy/main/icons/${tavyVersion}/${name}.svg`;
+    const src = `/icons/${name}.svg`;
 </script>
 
 

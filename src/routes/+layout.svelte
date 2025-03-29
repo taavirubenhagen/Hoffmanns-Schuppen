@@ -39,7 +39,6 @@
             <!--['Über uns', '/ueber-uns'],-->
             {#each [
                 ['Home', '/home'],
-                ['Über uns / Mitmachen', '/info'],
                 ['Investieren', '/investor-relations'],
                 ['Impressum', '/impressum'],
             ] as e}

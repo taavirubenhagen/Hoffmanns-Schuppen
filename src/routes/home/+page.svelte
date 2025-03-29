@@ -22,7 +22,7 @@
     Da der QR-Code auf den Anteilsscheinen hierhin weiterleitet,
     muss die Investor-Relations-Seite immer sofort erreichbar sein
 -->
-<Section className='p-8 md:p-16 bg-background flex flex-col justify-end items-center'>
+<Section className='p-8 md:p-16 bg-background flex flex-col justify-end items-center text-center'>
     <!--<img
         src="/images/verkaufsstand.jpeg" alt="Team"
         class="fixed left-0 -top-16 w-screen h-screen brightness-50 object-cover"
@@ -43,10 +43,6 @@
         Eine Schülerfirma in der Hand der Schüler*innen.
         <br/><br/>
         </MediumHeading>
-        <div class='mb-8 w-full flex flex-col gap-4 md:items-center'>
-            <Button next onClick={() => window.location.href = '/info'}>
-                Mitmachen
-            </Button>
-        </div>
+        Zum Mitmachen schreibt uns gerne bei IServ oder Insta an.
     </div>
 </Section>
